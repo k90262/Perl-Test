@@ -3,11 +3,18 @@ use strict;
 
 ############
 # merge.plx
-# to merge four locales files to a table which could open by excel.
+# To merge four locales files to a table which could open by excel.
 #
-# example:
+# Example:
 # perl merge.plx > result.txt 2> result.log
 #
+# P.S. 
+#  There may are some encode problems on MS Office (Opening file from Excel inside will be ok), 
+#   especially the MS Office 2011(Mac version) which don't support UTF8 encode.
+#
+# v1.0.2 
+#
+# Bill Ho
 ###########
 
 #Input files
@@ -34,6 +41,7 @@ for(my $n = 0; $n < @file_paths; $n++) {
   print "Input line number: $input_lines_number \n";
 
   foreach(@input_lines) {
+    s|\015\012|\012|; # Change ^M(CRLF) to LF
     chomp;
     if(/^\s+$/) {
       $null_lines_number++;
