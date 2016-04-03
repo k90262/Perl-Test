@@ -1,0 +1,120 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'metafile' => 'META.yml',
+         'use_rcfile' => 1,
+         'conflicts' => {},
+         'create_readme' => undef,
+         'magic_number' => undef,
+         'install_path' => {},
+         'create_license' => undef,
+         'dist_version' => '0.01',
+         'meta_add' => {},
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'quiet' => undef,
+         'recurse_into' => [],
+         'share_dir' => undef,
+         'recommends' => {},
+         'xs_files' => undef,
+         'get_options' => {},
+         'program_name' => undef,
+         'auto_configure_requires' => 1,
+         'base_dir' => '/Users/apple/perl_code/Animal',
+         'install_base' => undef,
+         'mb_version' => '0.4003',
+         'orig_dir' => '/Users/apple/perl_code/Animal',
+         'needs_compiler' => '',
+         'script_files' => undef,
+         'test_files' => undef,
+         'html_css' => '',
+         'module_name' => 'Animal',
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'dist_abstract' => undef,
+         'meta_merge' => {},
+         'has_config_data' => undef,
+         'config' => undef,
+         'create_packlist' => 1,
+         'build_bat' => 0,
+         'dist_suffix' => undef,
+         'install_sets' => {},
+         'bundle_inc' => [],
+         'requires' => {},
+         '_added_to_INC' => [],
+         'original_prefix' => {},
+         'use_tap_harness' => 0,
+         'pod_files' => undef,
+         'tap_harness_args' => {},
+         'dist_version_from' => 'lib/Animal.pm',
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'config_dir' => '_build',
+         'recursive_test_files' => undef,
+         'extra_compiler_flags' => [],
+         'create_makefile_pl' => 'traditional',
+         'destdir' => undef,
+         'metafile2' => 'META.json',
+         'build_script' => 'Build',
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'install_base_relpaths' => {},
+         'blib' => 'blib',
+         'c_source' => undef,
+         'PL_files' => undef,
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'extra_linker_flags' => [],
+         'build_class' => 'Module::Build',
+         'perl' => '/usr/bin/perl',
+         'dist_name' => 'Animal',
+         'mymetafile' => 'MYMETA.yml',
+         'debug' => undef,
+         'include_dirs' => [],
+         'prefix' => undef,
+         'dynamic_config' => 1,
+         'debugger' => undef,
+         'installdirs' => 'site',
+         'bundle_inc_preload' => [],
+         'sign' => undef,
+         'pollute' => undef,
+         'release_status' => 'stable',
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'cpan_client' => 'cpan',
+         'prefix_relpaths' => {},
+         'autosplit' => undef,
+         'license' => 'artistic_2',
+         'allow_mb_mismatch' => 0,
+         'verbose' => undef,
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'pm_files' => undef,
+         'scripts' => undef,
+         'mymetafile2' => 'MYMETA.json'
+       }
+     ];
+$x; }

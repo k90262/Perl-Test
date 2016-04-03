@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+
+eval 'exec /usr/bin/perl -w -S $0 ${1+"$@"}'
+    if 0; # not running under some shell
+use strict;
+
+use Cow;
+use Horse;
+use Sheep;
+
+# Cow::speak;
+# Horse::speak;
+# Sheep::speak;
+
+# my @pasture = qw(Cow Cow Horse Sheep Sheep);
+# foreach my $beast (@pasture) {
+#   no strict 'refs';
+#   &{$beast."::speak"};
+# }
+
+# Cow->speak;
+# Horse->speak;
+# Sheep->speak;
+# 
+# my $beat = 'Cow';
+# $beat->speak;
+
+my @pasture = qw(Cow Cow Horse Sheep Sheep);
+foreach my $beat (@pasture) {
+  $beat->speak;
+}

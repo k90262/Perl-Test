@@ -1,0 +1,18 @@
+en_US ja_JP zh_CN zh_TW
+en_US/bbbResources.properties
+en_US:
+Input line number: 2 
+ja_JP/bbbResources.properties
+ja_JP:
+Input line number: 2 
+zh_CN/bbbResources.properties
+zh_CN:
+Input line number: 2 
+zh_TW/bbbResources.properties
+zh_TW:
+Input line number: 2 
+The number of null lines:	0
+The number of read data:	8
+The number of unknow lines:	0
+
+Total: 8

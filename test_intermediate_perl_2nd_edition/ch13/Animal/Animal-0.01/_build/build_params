@@ -1,0 +1,124 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'has_config_data' => undef,
+         'prefix_relpaths' => {},
+         'debugger' => undef,
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'build_bat' => 0,
+         'c_source' => undef,
+         'install_sets' => {},
+         'get_options' => {},
+         'pm_files' => undef,
+         'metafile2' => 'META.json',
+         'use_rcfile' => 1,
+         'original_prefix' => {},
+         'destdir' => undef,
+         'requires' => {
+                         'parent' => 0
+                       },
+         'install_base_relpaths' => {},
+         'recommends' => {},
+         'build_class' => 'Module::Build',
+         'dist_name' => 'Animal',
+         'html_css' => '',
+         'pollute' => undef,
+         'mb_version' => '0.4003',
+         'installdirs' => 'site',
+         'autosplit' => undef,
+         'extra_compiler_flags' => [],
+         'dynamic_config' => 1,
+         'build_script' => 'Build',
+         'dist_version' => '0.01',
+         'PL_files' => undef,
+         'mymetafile' => 'MYMETA.yml',
+         'install_base' => undef,
+         'scripts' => undef,
+         'bundle_inc' => [],
+         'auto_configure_requires' => 1,
+         'recursive_test_files' => undef,
+         'module_name' => 'Animal',
+         'quiet' => undef,
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'prefix' => undef,
+         'orig_dir' => '/Users/apple/perl_code/ch13/Animal/Animal-0.01',
+         'magic_number' => undef,
+         'needs_compiler' => '',
+         'install_path' => {},
+         'create_license' => undef,
+         'debug' => undef,
+         'base_dir' => '/Users/apple/perl_code/ch13/Animal/Animal-0.01',
+         'tap_harness_args' => {},
+         'include_dirs' => [],
+         'license' => 'artistic_2',
+         'recurse_into' => [],
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'cpan_client' => 'cpan',
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'create_makefile_pl' => 'traditional',
+         'metafile' => 'META.yml',
+         'use_tap_harness' => 0,
+         'dist_abstract' => undef,
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'sign' => undef,
+         'pod_files' => undef,
+         'meta_add' => {},
+         'verbose' => undef,
+         'create_readme' => undef,
+         '_added_to_INC' => [],
+         'create_packlist' => 1,
+         'allow_mb_mismatch' => 0,
+         'dist_version_from' => 'lib/Animal.pm',
+         'bundle_inc_preload' => [],
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'blib' => 'blib',
+         'config' => undef,
+         'extra_linker_flags' => [],
+         'mymetafile2' => 'MYMETA.json',
+         'config_dir' => '_build',
+         'xs_files' => undef,
+         'share_dir' => undef,
+         'meta_merge' => {},
+         'test_files' => undef,
+         'script_files' => [
+                             'scripts/pasture'
+                           ],
+         'program_name' => undef,
+         'release_status' => 'stable',
+         'perl' => '/usr/bin/perl',
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'dist_suffix' => undef,
+         'conflicts' => {}
+       }
+     ];
+$x; }

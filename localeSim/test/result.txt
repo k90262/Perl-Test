@@ -1,0 +1,18 @@
+en_US ja_JP zh_CN zh_TW
+en_US/bbbResources.properties
+en_US:
+Input line number: 367 
+Unknow data: Unknow data: Unknow data: ja_JP/bbbResources.properties
+ja_JP:
+Input line number: 307 
+zh_CN/bbbResources.properties
+zh_CN:
+Input line number: 307 
+zh_TW/bbbResources.properties
+zh_TW:
+Input line number: 366 
+Unknow data: Unknow data: The number of null lines:	0
+The number of read data:	1342
+The number of unknow lines:	5
+
+Total: 1347

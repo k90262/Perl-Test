@@ -1,0 +1,120 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'create_license' => undef,
+         'pollute' => undef,
+         'debugger' => undef,
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'build_script' => 'Build',
+         'module_name' => 'Animal',
+         'quiet' => undef,
+         'build_class' => 'Module::Build',
+         'dist_author' => [
+                            'Bill <m0029002@stmail.cgu.edu.tw>'
+                          ],
+         'orig_dir' => '/Users/apple/perl_code/ch12/ch12-1_test/Animal',
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'metafile2' => 'META.json',
+         'c_source' => undef,
+         'installdirs' => 'site',
+         'get_options' => {},
+         'install_base_relpaths' => {},
+         'xs_files' => undef,
+         'pm_files' => undef,
+         'create_makefile_pl' => 'traditional',
+         'verbose' => undef,
+         'scripts' => undef,
+         'create_packlist' => 1,
+         'auto_configure_requires' => 1,
+         'program_name' => undef,
+         'needs_compiler' => '',
+         'prefix_relpaths' => {},
+         'extra_compiler_flags' => [],
+         'tap_harness_args' => {},
+         'destdir' => undef,
+         'autosplit' => undef,
+         'bundle_inc' => [],
+         'original_prefix' => {},
+         'install_base' => undef,
+         'perl' => '/usr/bin/perl',
+         'mymetafile' => 'MYMETA.yml',
+         '_added_to_INC' => [],
+         'allow_mb_mismatch' => 0,
+         'extra_linker_flags' => [],
+         'recurse_into' => [],
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'dynamic_config' => 1,
+         'meta_add' => {},
+         'mb_version' => '0.4003',
+         'create_readme' => undef,
+         'script_files' => undef,
+         'base_dir' => '/Users/apple/perl_code/ch12/ch12-1_test/Animal',
+         'cpan_client' => 'cpan',
+         'config' => undef,
+         'prefix' => undef,
+         'license' => 'artistic_2',
+         'dist_abstract' => undef,
+         'conflicts' => {},
+         'dist_version_from' => 'lib/Animal.pm',
+         'test_files' => undef,
+         'mymetafile2' => 'MYMETA.json',
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'requires' => {},
+         'html_css' => '',
+         'use_tap_harness' => 0,
+         'share_dir' => undef,
+         'debug' => undef,
+         'metafile' => 'META.yml',
+         'sign' => undef,
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'pod_files' => undef,
+         'bundle_inc_preload' => [],
+         'use_rcfile' => 1,
+         'meta_merge' => {},
+         'release_status' => 'stable',
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'build_bat' => 0,
+         'recommends' => {},
+         'recursive_test_files' => undef,
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'install_sets' => {},
+         'install_path' => {},
+         'PL_files' => undef,
+         'magic_number' => undef,
+         'config_dir' => '_build',
+         'has_config_data' => undef,
+         'dist_version' => '0.01',
+         'blib' => 'blib',
+         'dist_suffix' => undef,
+         'include_dirs' => [],
+         'dist_name' => 'Animal'
+       }
+     ];
+$x; }

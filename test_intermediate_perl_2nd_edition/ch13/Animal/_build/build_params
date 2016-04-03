@@ -1,0 +1,124 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'dist_abstract' => undef,
+         'auto_configure_requires' => 1,
+         'extra_linker_flags' => [],
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'debugger' => undef,
+         'dist_suffix' => undef,
+         'build_bat' => 0,
+         'perl' => '/usr/bin/perl',
+         'original_prefix' => {},
+         'install_path' => {},
+         'module_name' => 'Animal',
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'build_script' => 'Build',
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'autosplit' => undef,
+         'c_source' => undef,
+         'script_files' => [
+                             'scripts/pasture'
+                           ],
+         'debug' => undef,
+         'pod_files' => undef,
+         'release_status' => 'stable',
+         'metafile' => 'META.yml',
+         'dist_version_from' => 'lib/Animal.pm',
+         'create_license' => undef,
+         'get_options' => {},
+         'share_dir' => undef,
+         'cpan_client' => 'cpan',
+         'has_config_data' => undef,
+         'license' => 'artistic_2',
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'bundle_inc' => [],
+         'metafile2' => 'META.json',
+         'magic_number' => undef,
+         'PL_files' => undef,
+         'recursive_test_files' => undef,
+         'html_css' => '',
+         'meta_add' => {},
+         'blib' => 'blib',
+         'config' => undef,
+         'dist_name' => 'Animal',
+         'meta_merge' => {},
+         'prefix_relpaths' => {},
+         'build_class' => 'Module::Build',
+         'mymetafile2' => 'MYMETA.json',
+         'prefix' => undef,
+         'bundle_inc_preload' => [],
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'needs_compiler' => '',
+         'pollute' => undef,
+         'conflicts' => {},
+         'quiet' => undef,
+         'mymetafile' => 'MYMETA.yml',
+         'requires' => {
+                         'parent' => 0
+                       },
+         'install_base' => undef,
+         'allow_mb_mismatch' => 0,
+         'install_base_relpaths' => {},
+         'tap_harness_args' => {},
+         '_added_to_INC' => [],
+         'destdir' => undef,
+         'use_rcfile' => 1,
+         'scripts' => undef,
+         'mb_version' => '0.4003',
+         'installdirs' => 'site',
+         'dynamic_config' => 1,
+         'config_dir' => '_build',
+         'program_name' => undef,
+         'install_sets' => {},
+         'dist_version' => '0.01',
+         'recurse_into' => [],
+         'recommends' => {},
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'orig_dir' => '/Users/apple/perl_code/ch13/Animal',
+         'xs_files' => undef,
+         'include_dirs' => [],
+         'sign' => undef,
+         'extra_compiler_flags' => [],
+         'use_tap_harness' => 0,
+         'verbose' => undef,
+         'create_readme' => undef,
+         'create_makefile_pl' => 'traditional',
+         'pm_files' => undef,
+         'create_packlist' => 1,
+         'base_dir' => '/Users/apple/perl_code/ch13/Animal',
+         'test_files' => undef,
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ]
+       }
+     ];
+$x; }

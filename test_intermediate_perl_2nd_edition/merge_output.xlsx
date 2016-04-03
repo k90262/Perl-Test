@@ -1,0 +1,366 @@
+Locale_code	en_US	ja_JP	zh_CN	zh_TW	
+bbb.publishVideo.webcam.stop	Stop Webcam	停止ウェブカメラ	停止视讯	停止視訊	
+bbb.presentation.error.document.convert.failed	Error: Failed to convert the office document.	エラー：オフィス文書への変換に失敗しました。	错误：Office文件转换失败	錯誤：Office文件轉換失敗	
+bbb.networkmonitor.total	Total	合計	总计	總計	
+bbb.testWindow.publishButton	Publish	公開	发布	發佈	
+bbb.desktopView.fitToWindow	Fit to Window	ウィンドウに合わせる	适应窗口大小	填滿整個視窗	
+bbb.toolbar.whiteboard	Whiteboard	ホワイトボード	白板	白板	
+bbb.logout.usercommand	You have logged out of the conference.	会議からログアウトしました。	您已从会议中登出	您已經離開會議	
+onCallingPage.noAnswer	 is not answering.			未接電話	
+bbb.chat.privateMsgAwaiting2	* Private message awaiting *	* プライベートメッセージ待機中 *	* 等待私聊消息 *	* 等待聊天訊息 *	
+bbb.listeners.muteAllBtn.toolTip	Mute All	すべてをミュート	全部静音	全部靜音	
+bbb.fileupload.presentationNamesLbl	Uploaded Presentations:	アップロード済みの資料:	已上传演示文件:	已上傳文件:	
+bbb.viewers.viewersGrid.statusItemRenderer	Status	ステータス	状态	狀態	
+bbb.logoutOption.no	No	いいえ	否	否	
+bbb.publishVideo.startPublishBtn.toolTip	Start Sharing	ウェブカメラ利用開始	开始共享视频	開始視訊	
+bbb.listeners.title.toolTip	Show or hide the sound control screen	サウンドコントロール画面を表示/隠す	显示或隐藏声音控制屏幕	顯示或隱藏聲音控制畫面	
+bbb.mainToolbar.logoutBtn	Hang-up	ログアウト	退出	確定	
+bbb.networkmonitor.upload	Upload	アップロード	上传	上傳	
+bbb.notification.joinConference	{0} enters the classroom	{0}が入室しました	{0}进入教室	{0}進入教室	
+bbb.presentationToolbar.zoomOut	Zoom Out:	ズームアウト:	缩小:	縮小:	
+bbb.presentation.error.convert.swf	Error When Converting Uploaded File. Please Contact The Administrator.	エラー：アップロードファイルの変換中にエラーが発生しました。管理者にお問い合わせください。	文件转换过程中发生错误。请联系管理员	轉換過程中發生錯誤。請聯絡管理員	
+bbb.highlighter.toolbar.rectangle	Rectangle	四角形	矩形	矩形	
+bbb.toolbar.video	Video	ビデオ	视频	視訊	
+bbb.presentation.error.security	Security Error: Please contact administrator.	セキュリティエラー：管理者にご連絡ください。	安全错误: 请与管理员联系	安全錯誤: 請聯絡管理員	
+bbb.desktopView.actualSize	Display actual size	実際のサイズで表示	显示实际大小	顯示實際大小	
+bbb.presentation.backBtn.toolTip	Previous slide.	前のページ	上一页	上一頁	
+bbb.viewers.viewersGrid.nameItemRenderer.nameLabel.toolTip	You are logged in as this user.	あなたはこのユーザーとしてログインしています。	您以本用户名登陆	您以使用者登入	
+bbb.desktopPublish.fullscreen.tooltip	Share your whole screen	画面の一部を指定して共有	全屏共享	全螢幕共享	
+bbb.videodock.title	Video dock	ビデオ	视频区	視訊列表	
+bbb.settings.webcamResolution.low	Low			低	
+bbb.logoutOption.leave	Leave	退室する	离开	離開	
+failPage.connectError	Connect to sever error. Please try again or contact our customer service (Auto-reconnect in 5 seconds)			連線到Server錯誤，請您再次輸入或與客服聯絡（將於五秒後嘗試重新連線）	
+bbb.mainshell.statusProgress.cannotConnectServer	Sorry, we cannot connect to the server.	申し訳ありません。サーバーに接続できません。	抱歉，无法连接到服务器.	抱歉，無法連接到伺服器.	
+bbb.settings.warning.close	Close this Warning	この警告を閉じます。	关闭警告	關閉此警告	
+bbb.toolbar.chat	Chat	チャット	交谈	交談	
+recentsPage.onGoing	Ongoing			通話進行中	
+bbb.toolbar.more	More	もっと	更多	更多	
+bbb.chat.publicMsgAwaiting2	* Public message awaiting *	* 公開メッセージ待機中 *	* 等待公共消息 *	* 等待公共訊息 *	
+bbb.logout.confirm	Confirm	確認する	确认	確認	
+bbb.presentation.error.convert.format	Error: Please check that the uploaded file have a valid extension.	エラー：アップロードしたファイルが有効な拡張子かどうかを、ご確認ください。	错误：请检查上传文件的扩展名是否正确	錯誤：請檢查上傳文件的副檔名是否正確	
+bbb.listeners.pushToMute.toolTip	Click to mute yourself	クリックしてミュート（無音状態）	点击静音	點擊靜音	
+bbb.video.publish.hint.publishing	Publishing...	公開中・・・	发布中...	發布中...	
+bbb.highlighter.toolbar.thickness	Change Thickness	太さを変更	修改线条粗细	修改線條粗細	
+bbb.presentation.document.converted	Successfully converted the office document.	正常にオフィス文書に変換されました。	成功转换Office文件	成功轉換Office文件	
+bbb.testWindow.prevButton	Previous	戻す	上一步	上一步	
+incomingcallPage.accept	Accept			接通	
+bbb.settings.deskshare.instructions	Click Allow on the prompt that pops up to check that desktop sharing is working properly for you	クリックして、デスクトップ共有が正常に機能しているかどうかを知らせるプロンプトを許可してください。	在弹出窗口中，点击同意来启动桌面共享程序	在新開的視窗中，點擊同意來啓動桌面共享程式	
+bbb.notification.presenterLeft	Presenter has left the program, \n Please re-assign Presenter	プレゼンターはもう退室しました。\nプレゼンターを選び直してください。	主讲人已离开课程.\n请重新指定主讲人	主講人已離開課程，\n請重新指定主講人	
+bbb.networkmonitor.download	Download	ダウンロード	下载	下載	
+bbb.networkmonitor.latency	Latency	レイテンシー	延迟	延遲	
+bbb.toolbar.logout	Logout	ログアウト	退出	登出	
+bbb.settings.deskshare.start	Check Desktop Sharing	デスクトップ共有をチェック	检查桌面共享	檢查桌面分享	
+bbb.youtube.pauseInfo	Presenter pause the video	スピーカーは、映画を一時停止	主讲人将影片暂停	主講人將影片暫停	
+bbb.viewers.image.viewer	Participant	生徒	學生	學生	
+bbb.video.publish.hint.cantOpenCamera	Can't open your camera	あなたのカメラを有効にできません	打不开摄像头	視訊無法開啟	
+bbb.highlighter.toolbar.pencil	Highlighter	蛍光ペン	高亮	筆	
+bbb.startrecording.startservices.deskshare	Deskshare	デスクトップを共有します。	桌面共享	桌面共享	
+bbb.video.publish.hint.openingCamera	Opening camera...	カメラを有効にしています・・・	摄像头开启中...	視訊開啓中...	
+bbb.video.publish.close.label	Close	閉じる	关闭	關閉	
+bbb.mainToolbar.helpBtn	Help	ヘルプ	帮助	尋求幫忙	
+bbb.chat.privateChatMe	Me	私	我	我	
+bbb.presentation.fitToPage.toolTip	Fit to page	　ページに合わせる	符合页宽	頁面寬度	
+bbb.desktopPublish.region.label	Region	範囲指定	区域	視窗	
+failPage.loginError	This number doesn't exist. Please try again or contact our customer service			無此號碼，請您再次輸入或與客服聯絡	
+bbb.presentation.uploadcomplete	Upload completed. Please wait while we convert the document.	アップロードが完了しました。文書の変換が終わるまで、しばらくお待ちください。	文件上传完毕。正在转换，请等待	文件上傳完畢。正在轉換格式，請稍後	
+bbb.layout.combo.toolTip	Choose Video Layout	レイアウト選択	选择版型	選擇版型	
+bbb.logout.unknown2	Please check your own connection or try again after a few minutes.	ネットワークが正常に接続されているかをご確認ください、数分後にもう一度試してください。	请确认您的网路是否可正常连线，或是几分钟后再尝试看看。	請確認您的網路是否可正常連線，或是幾分鐘後再嘗試看看。	
+bbb.mainshell.resetLayoutBtn.toolTip	Reset Layout	レイアウトを元に戻す	重置布局	重新設定版面	
+navigator.chat.title	Chats			聊天	
+bbb.mainToolbar.snapshot.retake	Retake	撮り直す	重拍	重拍	
+bbb.toolbar.participant	Attendees	 参加者	 參與者	參與者	
+bbb.mainshell.locale.version	0.8	0.8	0.8	0.8	
+bbb.mainshell.logBtn.toolTip	Open Log Window	ログウィンドウを開く	打开日志	打開記錄檔	
+bbb.oldlocalewindow.windowTitle	Warning: Old Language Translations	警告：古い言語翻訳	警告: 旧的语言文件!	提醒: 舊版的語言翻譯	
+callPage.logout.message	Do you want to logout?			確定要登出嗎?	
+bbb.presentation.ok	OK	OK	OK	確定	
+bbb.presentation.presenterNameLbl	{0} is currently presenting.	{0} が、現在プレゼン中	当前演讲人为 {0}	當前主講者為 {0}	
+bbb.publishVideo.webcam.change.res	Change Resolution	解像度を変更する	重建分辨率	更改解析度	
+bbb.layout.combo.prompt	Layout selection	　レイアウト選択	选择布局	選擇佈局	
+bbb.networkmonitor.utilities	Utilities	その他	其它	其它	
+bbb.presentationToolbar.zoomIn	Zoom In:	ズームイン:	放大:	放大:	
+bbb.toolbar.video.toolTip	Share My Camera	ウェブカメラを利用	打开摄像头	開啟視訊	
+bbb.desktopPublish.maximizeRestoreBtn.toolTip	You cannot maximize this window.	最大化することができません。	此窗口不能最大化	此視窗不能最大化	
+bbb.mainToolbar.modLogoutBtn	End Meeting/Logout	ログアウト	結束會議/登出	登出	
+callPage.title	Welcome to our customer service			歡迎來到全家安心客服中心	
+bbb.bw.message.title	Warning: bandwidth is too low	警告：インターネットのスピードが足りません。	警示：頻寬過低	警示：頻寬過低	
+bbb.presentation.uploadwindow.word	WORD	ワード	WORD	WORD	
+bbb.presentation.uploadPresBtn	Upload a document for presentation.	資料をアップロードする	上传演示文件	上傳文件	
+messagePage.back	Back			回聯絡人清單	
+bbb.desktopPublish.closeBtn.toolTip	Stop sharing and close this window.	デスクトップ共有を終了しウィンドウを閉じる。	停止共享并关闭窗口	停止桌面共享並且關閉視窗	
+bbb.viewers.viewersGrid.roleItemRenderer	Role	役割	角色	角色	
+bbb.fileupload.selectBtn.toolTip	Browse file	ファイルを選択	浏览文件	瀏覽	
+bbb.video.publish.hint.noCamera	No camera available	カメラがありません	没有摄像头	沒有視訊	
+bbb.presentation.slideNumLbl.toolTip	Click to select a slide	ページ一覧表示から選択	选择一页	選擇頁數	
+bbb.chat.sendBtn.toolTip	Submit	メッセージを送信	发送消息	送出消息	
+bbb.viewers.assistantBtn.toolTip	Allow control of viewer mics	サウンドコントロールをユーザーに授権	授权为助理	授權使用者控制音訊	
+bbb.mainshell.statusProgress.loading	Loading {0} modules	読み込み中・・・	载入	載入	
+bbb.listeners.talk	Muted	トーク	讲话	講話	
+bbb.logout.unknown	Connection with the server lost.	サーバとの接続が切れました。	您已掉线。	您已斷線。	
+bbb.fileupload.uploadBtn	Uploading	アップロード	上传	上傳	
+onCallingPage.hangup	Hang Up			結束通話	
+bbb.chat.privateMsgAwaiting	Private message awaiting	プライベートメッセージ待機中	等待私聊消息	等待私人訊息	
+bbb.testWindow.videoTitle	Camera Preview	ビデオプレビュー	相机预览	視訊預覽	
+bbb.testWindow.micTitle	Microphone Test	マイクテスト	麦克风测试	麥克風測試	
+bbb.settingWindow.camera	Camera:	カメラ:	视讯 :	視訊:	
+FullVideo	Video Mode	ビデオモード	视频模式	視訊模式	
+bbb.micSettings.playSound	Play Test Sound	テストサウンドの再生	测试语音	測試語音	
+bbb.fileupload.uploadBtn.toolTip	Upload file	資料をアップロード	上传文件	上傳文件	
+bbb.settings.isight.command	Install Flash 10.2 RC2	Flash 10.2 RC2をインストール	安装Flash 10.2 RC2	安裝 Flash 10.2 RC2	
+contactListPage.status.title	Status			狀態	
+bbb.alertOKLabel.text	OK	確認	確認	確認	
+bbb.warning.networkBad	Network Signal Weak	弱いネットワーク信号	網路延遲	網路延遲	
+callPage.userlistTitle	Users			使用者	
+bbb.mainToolbar.snapshot.toolTip	Snapshot	写真を撮る	快照	快照	
+bbb.chat.title.toolTip	Show or hide the chat screen	チャット画面を表示/隠す	显示或隐藏在聊天屏幕	顯示或隱藏聊天畫面	
+bbb.mainToolbar.settingsBtn.toolTip	Open Settings	オプションを開く	开启选项	開啟選項	
+callPage.groupTitle	Groups			群組	
+bbb.mainToolbar.snapshot.turnOnCamera	Please turn on your camera to take a snapshot	ウェブカメラを利用してください。	请先开您的视讯	請先開您的視訊	
+bbb.mainshell.logoutQuestion	Exit meeting?	ログアウト?	退出?	登出?	
+bbb.desktopPublish.fullscreen.label	Full Screen	全画面表示	全屏	全螢幕	
+bbb.publishVideo.startPublishBtn.saveSnapshot	Your video snapshot has been successfully saved	写真の保存が成功でした。	照片已储存	照片已儲存	
+bbb.video.originalSizeBtn.tooltip	Original size	オリジナルサイズ	原来大小	原來大小	
+bbb.startrecording.recordingwizard.webcam_only	Record Webcam Only	ウェブカメラ画面のみ録画します。	只錄視訊	只錄視訊	
+bbb.logout.title	Are you sure you want to quit?	確認ログアウト	登出确认	確定要離開嗎?	
+bbb.video.publish.hint.cameraDenied	Camera access denied	カメラへのアクセスが拒否されました	请求摄像头被拒绝	選取的視訊被拒絕	
+bbb.mainToolbar.snapshot.uploadComplete	Upload Complete	完了アップロード	上传完成	上傳完成	
+bbb.chat.cmpColorPicker.toolTip	Text Color	文字の色	文字颜色	文字顏色	
+loginPage.loggingIn	Login...			登入中...	
+bbb.presentation.forwardBtn.toolTip	Next slide	次のページ	下一页	下一頁	
+bbb.settings.language	Change Language	言語	语言	變更語言	
+bbb.listeners.unmute.toolTip	Unmute			取消靜音	
+bbb.presentation.title	Whiteboard	ホワイトボード	白板	白板	
+bbb.toolbar.speaker	Speaker	スピーカー	扩音器	擴音器	
+bbb.listenerItem.nameLbl.toolTip	Select this user and click button to mute or unmute.	ユーザーを選択し、ミュート/ミュート解除します。	设置/取消此用户静音	選擇使用者，進行靜音/取消靜音操作	
+bbb.desktopPublish.stop.tooltip	Close screen share	デスクトップ共有の終了	关闭桌面共享	關閉桌面共享	
+bbb.presentation.memorySaverMode	*Memory Saver Mode	*精簡模式	*精簡模式	*精簡模式	
+bbb.notification.assistantLeft	TA has left the program, \nplease reassign assistant	アシスタントはもう退室しました。\nアシスタントを選び直してください。	助教已离开课程.\n请重新指定助教	助教已離開課程，\n請重新指定助教	
+bbb.startrecording.recordingwizard.deskshare_webcam	Record Deskshare and Webcam	デスクトップ共有画面とウェブカメラ画面、両方も録画します。	錄桌面共享與視訊	錄桌面共享與視訊	
+navigator.setting.title	Setting			設定	
+bbb.toolbar.mic	Mute	ミュート	靜音	靜音	
+bbb.fileupload.labelFileInfo	Accepted file PDF, JPG, PNG	サポートされるファイル形式 PDF, JPG, PNG	支援上传档案格式 PDF, JPG, PNG	支援上傳檔案格式 PDF, JPG, PNG	
+bbb.settings.java.label	Java version error	Javaのバージョンエラー	Java版本错误	Java 版本錯誤	
+bbb.viewers.viewersGrid.nameItemRenderer.you	You	あなた	您	您	
+navigator.login.title	Login			登入	
+bbb.mainshell.copyrightLabel2	(c) 2012, Cloudpe	(c) 2012, Cloudpe+ バージョン {0} - 公式サイトに詳細をご覧ください。 http://www.cloudpe.com/.	(c) 2012, Cloudpe	(c) 2012, Cloudpe+ 版本 {0} - 請登入官方網站查看詳細資料 http://www.cloudpe.com/.	
+bbb.settings.voice.volume	Microphone Activity	マイクの状態	麦克风状态	麥克風狀態	
+bbb.loggedOutWindow.box.button	OK	ログアウト	登出	登出	
+bbb.testWindow.enterButton	Enter Classroom	教室に入る	进入课堂	進入教室	
+bbb.settingWindow.layout	Panel mode:	レイアウト :	面板模式 :	面板模式 :	
+bbb.settings.about	About Cloudpe-Meet			關於 Cloudpe-Meet	
+navigator.recordings.title	Recordings			錄影	
+bbb.logout	Logout	退室	退出	離開會議	
+bbb.testWindow.speakerTitle	Speaker Test	サウンドテスト	音箱测试	喇叭測試	
+bbb.presentation.converted	Converted {0} of {1} slides.	{1} 中、{0} ページを変換しました。	已转换{0}页，共{1}页	已轉換{0}頁中，共{1}頁	
+navigator.recents.title	Recents			會議列表	
+bbb.highlighter.toolbar.line	Line	線	直线	直線	
+callPage.loginFailed.message	You have been logged in from another device	他端末からログインしました	你已经从其他装置上登入	你已經從其他裝置上登入	
+bbb.presentation.error.convert.notsupported	Error: The uploaded document is unsupported. Please upload a compatible file.	エラー：アップロードしたドキュメントはサポートされていません。利用可能なファイルをアップロードしてください。	错误：上传的文件不支持。请上传被支持的文件	錯誤：不支援您所上傳的文件。請上傳有被支援的文件	
+bbb.toolbar.snapshot	Snapshot	スナップショット	快照	快照	
+recentsPage.titleAll	All			所有通話	
+bbb.mainToolbar.modLogoutBtn.toolTip	End Meeting and Logout	ログアウト	結束會議並且登出	登出	
+bbb.video.publish.hint.waitingApproval	Waiting for approval. Make sure you have allowed browser camera access.	承認待ち	等候批准	等候批准	
+bbb.video.fitVideoBtn.tooltip	Fit video	ビデオに合わせる	调整视频大小	調整視訊大小	
+bbb.conference.assistantLeft	TA has left the program, \nplease reassign assistant	アシスタントはもう退室しました。\nアシスタントを選び直してください。	助教已离开课程.\n请重新指派助教	助教已離開課程，\n請重新指派助教	
+bbb.presentation.resetZoomBtn.toolTip	Reset Zoom	ズームを戻す	重置缩放	重新設定	
+bbb.mainToolbar.modEndMeetingBtn	End Meeting			結束會議	
+bbb.fileupload.showBtn.toolTip	Show Presentation	資料を表示	演示幻灯片	顯示文件	
+bbb.testWindow.nextButton	Next	次へ	下一步	下一步	
+settingPage.language	Language			語系	
+bbb.presentation.uploaded	uploaded.	アップロードしました。	已上传	已上傳	
+bbb.listeners.title	Listeners{0} {1}	音声制御{0} {1}	听众{0} {1}	聲音控制{0} {1}	
+bbb.logout.selectOtherMeeting	Select Other Meeting	その他の会議を選択してください	选择其他会议	選擇其他會議	
+bbb.testWindow.micInstruction	Press the Open Mic button and talk into your microphone. You should hear your voice.	下のボタンを長押して話してください。 自分の音声が聞こえるはずです。	请长按下面的按钮并且讲话来测试麦克风. 你应该听到自己的声音	請長按下面的按鈕並且講話來測試麥克風. 你應該聽到自己的聲音	
+bbb.testWindow.speakerInstruction	Press button to check your speaker. You should hear music playing.	このボタンをクリックして、スピーカテストを開始してください。音楽が聞こえるはずです。	请按下这个按钮来测试音箱. 你应该听到音乐	請按下這個按鈕來測試喇叭. 你應該聽到音樂	
+loginPage.password	Password			密碼	
+bbb.settingWindow.confirm	OK	OK	OK	確定	
+bbb.networkmonitor.current	Current	現在	目前	目前	
+Default	Default	会議モード	会议模式	會議模式	
+onCallingPage.call	Calling			打電話給	
+bbb.settings.isight.text	If you have problems with your iSight camera, it may be because you are running OS X 10.6.5, which is known to have a problem with Flash capturing video from the iSight camera. \n To correct this, click on the link bellow to install a newer version of Flash player, or update your Mac to the newest version	あなたのiSightカメラに問題がある場合、OS X 10.6.5上で動作させていることが原因である可能性がある。それは既知の問題で、iSightカメラからビデオのキャプチャしているFlashに問題がある。これを修正するには、Flash Playerの新しいバージョンをインストールするため下記のリンクをクリックするか、またはMacを最新バージョンへアップデートして下さい。	如果你的iSight摄像头有问题，可能是你运行的系统是OS X 10.6.5，这个版本在通过Flash抓取摄像头时会有问题。\n要解决这个问题，请点击下面的链接并安装最新版本的Flash或是更新你的Mac系统到最新版本。	如果您的iSight視訊有問題，可能是您運行的系統是OS X 10.6.5，這個版本在透過Flash讀取視訊時會有問題。\n要解決這個問題，請點擊下面的鏈接並安裝最新版本的Flash或是更新您的Mac系統到最新版本。	
+bbb.logoutOption.question	End the course?	コースの終わりかどうか？	是否将课程结束？	是否將課程結束？	
+bbb.logoutOption.endClass	End Class	授業を止める	结束课程	關閉課程	
+bbb.bw.message.bwlow	Your bandwidth shortage will affect your video and sound quality.	インターネットのスピードが足りないので、画質と音質が下がる可能性があります。	您的頻寬不足，將影響到您的視訊與声音品質。	您的頻寬不足，將影響到您的視訊與聲音品質。	
+bbb.video.message	Voice Call			語音通話中	
+bbb.startrecording.startservices.phone	Phone	ヘッドセット	耳机	耳機	
+bbb.highlighter.toolbar.undo	Undo Shape	元に戻す	撤销	還原	
+bbb.viewers.viewersGrid.statusItemRenderer.raiseHand.toolTip	Hand Raised on {0}	挙手数 {0}	{0} 在举手	在 {0} 舉手	
+bbb.testWindow.talk	Talk	話す	讲	講	
+loginPage.username	User Name:				
+bbb.fileupload.title	Presentation	資料をアップロード	上传演示文件	上傳文件	
+loginPage.login	Login			登入	
+bbb.presentation.error.convert.nbpage	Error: Failed to determine the number of pages in the uploaded document.	エラー：アップロードしたドキュメントのページ数が特定できません。	错误：无法判断文件页数	錯誤：無法判斷文件頁數	
+failPage.back	Back			回主頁面	
+bbb.snapshot.reconnect	Reconnecting webcam	ウェブカメラを接続し直し	重新连接网络摄像头	重新連接網絡攝影機	
+bbb.mainshell.statusProgress.connecting	Connecting to the server	サーバーへ接続しています。	正在连接到服务器	正在連接到伺服器	
+bbb.snapshot.takingPicture	Connecting camera	カメラを接続する	照相中	照相中	
+bbb.logout.cancel	Cancel	キャンセル	取消	取消	
+recentsPage.ended	Ended			通話已結束	
+bbb.toolbar.setting	Setting	オプション	設定	設定	
+bbb.conference.presenterLeft	Presenter has left the program, \nplease reassign presenter	スピーカーはもう退室しました。\nスピーカーを選び直してください。	主讲人已离开课程.\n请重新指派主讲人	主講人已離開課程，\n請重新指派主講人	
+bbb.startrecording.startservices.resolution	Resolution	解像度	解析度	解析度	
+bbb.settings.isight.label	iSight camera error	iSightカメラのエラー	iSight摄像头错误	iSight 鏡頭錯誤	
+bbb.desktopPublish.region.tooltip	Share a part of your screen	画面の一部を指定して共有	共享部分屏幕	共享視窗	
+bbb.presentation.maxUploadFileExceededAlert	Error: The file is bigger than what's allowed.	エラー：このファイルは大きすぎてアップロードできません。	错误: 文件过大.	錯誤: 文件太大	
+onCallingPage.finishMeeting	Finish Meeting			結束會議	
+failPage.serverPortChecking	Checking network connection...			檢查網路連線中⋯⋯	
+bbb.settingWindow.hardwareTest	Hardware Test	ハードウェアテスト	硬体测试	硬體測試	
+bbb.mainToolbar.snapshotBtn	Snapshot	スナップショット	快照	快照	
+bbb.desktopPublish.title	Desktop Sharing	デスクトップ共有	桌面共享	桌面共享	
+bbb.fileupload.progBarLbl	Progress:	進捗:	进度:	上傳進度:	
+bbb.viewers.viewersGrid.statusItemRenderer.assiIcon.toolTip	Make Assistant	アシスタント	助理	助理	
+bbb.presentation.clickToUpload	Upload presentation	資料をアップロード	上传演示文件	點擊上傳演說文件	
+bbb.testWindow.videoInstruction	Select camera and resolution. Click publish to share your video with all participants.	自分の映像が正しく下の枠に表示するのかを、ご確認ください。	请确认自己的视讯在下方的显示栏中	請確認自己的視訊在下方的顯示欄中	
+bbb.meetingTimer.timeRemaining	Time remaining:	残ってる時間：　	　剩下時間：	　剩下時間：	
+bbb.loggedOutWindow.reConnect	Reconnect	再接続する	重新连线	重新連線	
+bbb.micSettings.join	Enter Classroom	教室に入る	进入教室	進入教室	
+bbb.toolbar.phone.toolTip	Share My Microphone	マイクを利用	打开麦克风	打開麥克風	
+bbb.chat.publicChatUsername	All	すべて	所有	所有人	
+bbb.highlighter.button.toolTipHide	Hide Toolbar	ホワイトボード用ツールを非表示	隐藏工具列	隠藏白板工具列	
+bbb.micSettings.changeMic	Change Microphone	マイク変更	更换麦克风	更換麥克風	
+bbb.listenerItem.talkImg.toolTip	Talking	会話中	在讲话	講話中	
+bbb.settings.instructions	Accept the Flash prompt that asks you for camera permissions. If you can see yourself and  hear yourself, your browser has been set up correctly. Other potentials issues are shown bellow. Click on each to find a possible solution.	カメラのアクセス許可を尋ねられたFlashのプロンプトを受け入れて下さい。自分自身が見えて、自分自身の声を聞くことができれば、ブラウザが正しく設定されています。その他の可能性のある問題は以下になります。可能な解決策を見つけるためそれぞれクリックしてください。	在弹出的Flash设置对话框中“接受”Flash使用您的摄像头。若您能够看到和听到自己，说明浏览器已设置正确。其他可能存在的问题显示如下。依次点击以找到可行的解决方案。	在彈出的Flash設置對話框中“接受”Flash使用您的視訊。若您能夠看到和聽到自己，說明瀏覽器已設置正確。其他可能存在的問題顯示如下。依次點擊以找到可行的解決方案。	
+bbb.mainToolbar.snapshot.noCamera	No Camera Available	この機能を使うには、ウェブカメラの利用が必要です。	请安装摄影机，以便使用这项功能	請安裝視訊，以便使用這項功能	
+mainHeader	Cloudpe-Contact			Cloudpe-Contact	
+bbb.listeners.ejectTooltip	Kick User	このユーザのマイクを停止します	踢出用户	強制使用者退出	
+bbb.viewers.presentBtn.toolTip	Allow control of deskshare, whiteboard, mics	ホワイトボード機能をユーザーに授権	授权为演讲人	授權使用者控制白板	
+bbb.highlighter.button.toolTipShow	Show Toolbar	ホワイトボード用ツールを表示	显示工具列	顯示白板工具列	
+bbb.viewers.title	Users{0} {1}	ユーザー{0} {1}	用户{0} {1}	使用者列表{0} {1}	
+bbb.publishVideo.title	Webcam Preview	ウェブカメラを利用します。	共享视频	視訊預覽	
+Lecture	Lecture	ホワイトボードモード	白板模式	白板模式	
+bbb.fileupload.okCancelBtn	Cancel	キャンセル	取消	取消	
+bbb.micSettings.testCamera	3  Camera Preview	自分の映像が見えますか？	3  视讯. 请问你有看见自己的影像吗？	3  視訊。請問有看見自己的影像嗎？	
+bbb.bw.message.bwtoolow	Your free usage of bandwidth is critically low. Your meeting is about to be shut down.	インターネットが限界まで遅くなったので、あなたが退室させる事に成りました。	您的頻寬使用量嚴重不足. 您的會議即將被關閉.	您的頻寬使用量嚴重不足. 您的會議即將被關閉.	
+bbb.oldlocalewindow.reminder2	Please clear your browser's cache and try again.	ご使用のブラウザのキャッシュを削除した後、再度実行してみてください。	请清空浏览器缓存并重试.	請清除瀏覽器暫存檔、瀏覽紀錄後再重試.	
+bbb.chat.messagereceived	New Message	メッセージ	新讯息	新訊息	
+bbb.presentation.uploadwindow.image	IMAGE	画像	IMAGE	IMAGE	
+bbb.settings.java.command	Install newest Java	最新のJavaをインストール	安装最新版Java	安裝最新Java	
+bbb.chat.sendBtn	Send	送信	发送	傳送	
+bbb.listenerItem.lockImg.toolTip	Click to keep muted or unmuted	ミュート/ミュート解除をロックします。	保持静音或非静音	保持静音或非静音	
+bbb.notification.assignAsAssistant	{0} Assign as assistant	{0}がアシスタントに成りました	{0}现在是助教	{0}現在是助教	
+bbb.presentation.error.io	IO Error: Please contact administrator.	IOエラー：管理者にご連絡ください。	IO 错误: 请与管理员联系	IO 錯誤: 請聯絡管理員	
+bbb.chat.privateChatFrom	From	から	從	從	
+bbb.presentation.uploadwindow.powerpoint	POWERPOINT	パワーポイント	POWERPOINT	POWERPOINT	
+chatPage.send	Send			傳送	
+bbb.mainToolbar.snapshot.save	Save	保存	存档	存檔	
+bbb.logout.asyncerror	An Async Error occurred	非同期エラーが発生しました。	同步错误	同步錯誤	
+bbb.presentation.uploadwindow.closeLabel	Click OK to close the window	OKをクリックしてウィンドウを閉じてください。	点OK关闭窗口	選OK關閉視窗	
+bbb.logout.connectionclosed	The connection to the server has been closed	サーバーへの接続が閉じられました。	连接被关闭	伺服器連接已關閉	
+bbb.settings.noissues	No outstanding issues have been detected.	未解決の問題は検出されていません。	没有检测到明显的问题。	没有發現額外問題	
+bbb.fileupload.genThumbText	Generating thumbnails..	サムネイルを作成中..	生成缩略图..	產生縮圖..	
+recentsPage.titleOngoing	Ongoing			通話進行中	
+bbb.logout.connectionfailed	The connection to the server has failed	サーバへの接続が失敗しました。	连接服务器失败	連接伺服器失敗	
+bbb.viewers.kickUserBtn.toolTip	Kick User	このユーザのマイクを停止します。	踢出用户	強制讓使用者離開	
+bbb.notification.you	You	あなた	您	您	
+bbb.logoutOption.cancel	Cancel	キャンセル	取消	取消	
+bbb.viewers.viewersGrid.statusItemRenderer.presIcon.toolTip	Make Presenter	プレゼンター	演讲人	演講者	
+chatPage.gotNewMsg	sent you a message!			傳訊息給您!	
+bbb.viewers.presentBtn.label	Full Control	ユーザ使用権	指派分享權	指派分享權	
+bbb.startrecording.startservices.endString	\n	録画機能を使用します。	才能开启录影功能	才能開啟錄影功能	
+loginPage.account	Account			帳號	
+bbb.chat.title	Chat	チャット	聊天	聊天	
+bbb.settings.webcamResolution.high	High			高	
+Video	Video	ビデオ	视频	視訊	
+bbb.fileupload.showBtn	Show	表示	演示	顯示	
+bbb.oldlocalewindow.reminder1	You may have an old language translations.	BigBlueButtonの古い言語翻訳を使用しているようです。	您可能正在使用旧版的Cloudpe界面翻译.	您可能正在使用舊版的Cloudpe+翻譯.	
+bbb.startrecording.recordingwizard.ds_only	Record Deskshare Only	デスクトップ共有画面のみ録画します。	只錄桌面共享	只錄桌面共享	
+bbb.presentation.uploadPresBtn.toolTip	Upload a document for presentation.	資料をアップロードする	上传演示文件	上傳文件	
+updateVersionView.content	The new version of\nCloudpe-Meet is available.\nPlease update to version {0} now.			新版本的 Cloudpe-Meet 已供下載。 \n請立即更新版本 {0} 。	
+bbb.listeners.pushToTalk.toolTip	Click to talk	クリックしてお話しください	点击讲话	點擊講話	
+bbb.publishVideo.webcam.change.cam	Change Camera	カメラを変更	更改相机	更改相機	
+bbb.video.publish.hint.cameraIsBeingUsed	Your camera is being used by another application	あなたのカメラは他のアプリケーションによって使用中です	摄像头已被使用， 请先关闭使用中的摄像後再试一次	視訊已被使用， 請先關閉使用中的視訊後再試一次	
+bbb.highlighter.toolbar.ellipse	Circle	円形	圆	圓	
+bbb.startrecording.startservices.question	Start recording lecture?	録画を始めますか？	開始錄製課程?	開始錄影?	
+bbb.presentation.error.convert.maxnbpagereach	Error: The uploaded document has too many pages.	エラー：アップロードしたドキュメントのページが多すぎます。	错误：上传的文件页数过多	錯誤：上傳的文件頁數過多	
+bbb.chat.publicMsgAwaiting	Public message awaiting	公開メッセージ待機中	等待公共消息	等待公共訊息	
+bbb.chat.chatOptions	Chat Options	チャット設定	聊天选项	聊天選項	
+bbb.chat.privateChatSelect	Select a person to chat with privately	プライベートチャットする個人を選択	选择私聊对象	選擇聊天對象	
+bbb.fileupload.goBack	Go up	戻る	回去	回去	
+callPage.profile	Profile			個人資料	
+bbb.fileupload.fileLbl	File:	ファイル:	文件:	文件:	
+bbb.settings.warning.label	Warning	警告	警告	警告	
+recentsPage.missing	Missing Call			未接通話	
+bbb.settingWindow.resolution	Resolution:	解像度:	解析度 :	解析度:	
+bbb.presentation.fitToWidth.toolTip	Fit to width	　幅に合わせる	填满	填滿	
+bbb.highlighter.toolbar.color	Select Color	色を選択	选择颜色	選擇顏色	
+bbb.mainToolbar.snapshot.upload	Uploading	アップロード	上传	上傳	
+bbb.videoSettings	can you watch the yourself video?	　自分の映像が見えますか？	請問有看見自己的影像嗎？	請問有看見自己的影像嗎？	
+bbb.settings.voice.adjust	Adjust Volume	ボリュームを調整	调整音量	調整音量	
+bbb.settings.flash.text	You have Flash {0} installed, but you need at least version {1} to run BigBlueButton properly. Click on the button bellow to install the newest Adobe Flash version.	あなたは、Flash {0}がインストールされていますが、適切にBigBlueButtonを実行するために少なくともバージョン{1}が必要です。最新のAdobe Flashバージョンをインストールするには、下のボタンをクリックしてください。	您安装的Flash为{0}，BigBlueButton需要{1}以上版本才能正常运行。点击下面的链接安装最新的Flash Player	您安裝的Flash爲{0}，Cloudpe+需要{1}以上版本才能正常運行。點擊下面的鏈接安裝最新的Flash Player	
+bbb.fileupload.currentFolder	Current folder : {0}	現在のフォルダ：{0}	当前文件夹：{0}	當前文件夾：{0}	
+bbb.app.version	v0.97	v0.97	v0.97	v0.97	
+bbb.desktopPublish.minimizeBtn.toolTip	Minimize this window.	このウィンドウを最小化します。	最小化窗口	最小化視窗	
+bbb.settings.flash.label	Flash version error	Flashバージョンエラー	Flash版本错误	Flash版本錯誤	
+bbb.logout.invalidapp	The red5 app does not exist	red5アプリが存在しません。	Red5应用不存在	red5 程式尚未安装	
+bbb.logoutOption.yes	Yes	はい	是	是	
+bbb.notification.assignAsPresenter	{0} is now presenter	{0}がプレゼンターに成りました	{0}现在是主讲人	{0}現在是主講人	
+failPage.serverPortError	Server Connection Failed. Please try again. ({0})			伺服器連線失敗。請嘗試重新連線。（{0}）	
+bbb.mainToolbar.snapshot.capture	Capture	撮る	拍照	拍照	
+bbb.viewers.viewersGrid.statusItemRenderer.streamIcon.toolTip	Click to view.	クリックして閲覧	查看	查看	
+failPage.networkError	Please check your network connection and try again (Auto-reconnect in 5 seconds)			請檢查您的網路連線，並再試一次（將於五秒後嘗試重新連線	
+bbb.viewers.viewersGrid.nameItemRenderer	Name	名前	用户名	使用者	
+bbb.startrecording.recordingwizard.starttooltip	Start Recording	録画を始める	開始錄影	開始錄影	
+bbb.startrecording.startservices.title	You must start Webcam, Deskshare or both to begin recording.	録画を開始する前に、ウェブカメラとデスクトップ共有を利用するかどうかを、ご確認ください。	在開始錄影前，請確認是否已經打開視訊與桌面共享。	在開始錄影前，請確認是否已經打開視訊與桌面共享。	
+incomingcallPage.info	 Incoming call from			來電...	
+bbb.settingWindow.language	Language:	言語 :	语言 :	語言 :	
+bbb.mainToolbar.listenerBtn.toolTip	Click to enable/disable listener's audio	サウンドコントロール画面を表示/隠す	开关听众的声音	開啟或關閉聲音控制	
+bbb.listeners.unmuteAllBtn.toolTip	Unmute All	すべてのミュートを解除	取消静音	取消靜音	
+bbb.startrecording.toolbarbutton.tooltip	Record Lecture	録画	课程录影	錄影	
+bbb.settingWindow.title	Option Settings	オプション	选项设定	選項設定	
+bbb.loggedOutWindow.box.title	Logged out	ログアウト	登出	登出	
+settingPage.logout	Logout			登出	
+navigator.contactlist.title	Contacts			聯絡人	
+bbb.logout.endmeeting	Meeting ended by moderator. Bye-bye!	議長は会議を閉じました！	主持人已關閉會議!	主持人已關閉會議!	
+bbb.layout.combo.custom	Choose Video Layout	レイアウト選択	自定义布局	選擇版型	
+bbb.startrecording.startservices.camera	Camera	ウェブカメラ	摄影机	攝影機	
+bbb.notification.assignAsBoth	{0} is now the Speaker and assistant	{0}がプレゼンターとアシスタントに成りました	{0}现在是主讲人及助教	{0}現在是主講人及助教	
+bbb.pageTitle	Cloudpe Platform	Cloudpe+	Cloudpe+	Cloudpe+	
+bbb.presentation.uploadwindow.pdf	PDF	PDF	PDF	PDF	
+bbb.settings.webcamResolution.medium	Medium			中	
+bbb.desktopPublish.stop.label	Close	閉じる	关闭	關閉	
+bbb.warning.connectingInfo	Voice Connecting.......			語音連線中⋯⋯	
+callPage.logout.ok	Ok			確定	
+updateVersionView.title	App Version Out of Date			應用程式版本已逾期	
+bbb.settings.java.text	You have Java {0} installed, but you need at least version {1} to use the BigBlueButton desktop sharing feature. Click on the button bellow to install the newest Java JRE version.	Javaの{0}がインストールされていますが、BigBlueButtonのデスクトップ共有機能を使用するには、少なくともバージョン{1}が必要です。最新のJavaのJREのバージョンをインストールするには、下のボタンをクリックしてください。	您安装的是Java {0}，但BigBlueButton中的桌面共享功能要求的最低版本是{1}。点击下面的按钮安装最新的JRE。	您安裝的是Java {0}，但Cloudpe+中的桌面共享功能要求的最低版本是{1}。點擊下面的按鈕安裝最新的JRE。	
+failPage.loginNetworkError	Please check your network connection and try again			請檢查您的網路連線，並再試一次	
+bbb.networkmonitor.title	Network Information	ネットワーク情報	网路资讯	網路資訊	
+bbb.listenerItem.muteUnmute.toolTip	Mute or unmute this listener	このユーザをミュートまたはミュート解除	设置/取消此听众静音	設置/取消此聽眾静音	
+bbb.startrecording.recordingwizard.title	Record Session	録画	錄影	錄影	
+bbb.mainToolbar.settingsBtn	Settings	オプション	设置	選項	
+incomingcallPage.reject	Reject			拒接	
+bbb.video.publish.hint.videoPreview	Video preview	ビデオプレビュー	视频预览	視訊預覽	
+bbb.logout.appshutdown	The server app has been shut down	サーバアプリはシャットダウンしました。	服务器应用已被关闭	伺服器程式已經關閉	
+bbb.chat.privateChatTo	To	へ	给	給	
+bbb.desktopView.title	Desktop Sharing	デスクトップ共有	桌面共享	桌面共享	
+bbb.viewers.raiseHandBtn.toolTip	Click to raise hand.	クリックして挙手。	举手	舉手	
+bbb.settings.flash.command	Install newest Flash	最新のFlashをインストール	安装最新Flash	安裝最新Flash	
+bbb.micSettings.speakIntoMic	Microphone Test	自分の声が聞こえますか？	麦克风。 请问你有听见自己的声音吗?	麥克風。 請問有聽見自己的聲音嗎?	
+bbb.testWindow.hold	Open Mic	押す	按	按	
+bbb.mainToolbar.chatBtn.toolTip	Click to open/close chat window	チャット画面を表示/隠す	开关聊天用户	開啟或關閉聊天畫面	
+failPage.reconnect	Reconnect			重新連線	
+bbb.chat.fontSize	Font Size	文字の大きさ	字体大小	字體大小	
+bbb.highlighter.toolbar.clear	Clear Page	ページをクリア	清除页面	清除頁面	
+bbb.meetingTimer.reminder	This class will be end after {0} minutes	授業が{0}十分に終わります	这堂课{0}分钟之内即将结束	這堂課{0}分鐘之内即將結束	
+bbb.toolbar.deskshare.toolTip	Share My Desktop	デスクトップを共有	共享桌面	桌面共享	
+bbb.micSettings.hearFromHeadset	Speaker Test	テストサウンドが聞こえますか？	扬声器。 请问你有听到测试音吗？	揚聲器。 請問有聽見測試音嗎？	
+loginPage.phone	Phone Number:			電話:	
+bbb.fileupload.deleteBtn.toolTip	Delete Presentation	資料を削除	删除演示文件	刪除文件	
+bbb.video.publish.close.tooltip	Stop sharing your video	ウェブカメラ利用停止	停止共享视频	停止視訊	
+bbb.logout.rejected	The connection to the server has been rejected	サーバーへの接続が拒否されました。	连接被服务器拒绝	連接伺服器被拒絕	
+callPage.logout.cancel	Cancel			取消	
+bbb.listeners.mute	Mic On	ミュート	静音	靜音	
+bbb.video.keepAspectBtn.tooltip	Keep window aspect	ウィンドウ比率を保持	保持窗口外观	保持窗窗外觀	
+bbb.networkmonitor.frameRate	Frame Rate	Frame Rate	Frame Rate	Frame Rate	
+bbb.notification.leftConference	{0} left the classroom	{0}が退室しました	{0}离开教室	{0}離開教室	
+bbb.presentation.uploadwindow.excel	EXCEL	エクセル	EXCEL	EXCEL	
+bbb.viewers.assistantBtn.label	Mic Control	音声制御権	指派控制權	指派控制權	
+recentsPage.btnJoin	Join			加入	
+bbb.presentation.document.supported	The uploaded document is supported. Starting to convert...	アップロードしたドキュメントはサポートされています。変換を開始します...	上传的文件可以支持，开始转换...	已支援上傳的文件	
+callPage.call	Call			撥號	
+bbb.layout.addButton.toolTip	Choose Video Layout	レイアウト選択	选择版型	選擇版型	
+bbb.logout.meetingended	The meeting has ended. Bye-bye!	会議はもう終了しました！	會議已經結束!	會議已經結束!	
+bbb.micSettings.cancel	Cancel	キャンセル	取消	取消	
+bbb.mainToolbar.logoutBtn.toolTip		退室	退出	登出	
+bbb.video.publish.hint.permissionDenied	Please set the Flash Player video access permissions allow	ビデオを許可するように設定し、Flash Playerのアクセス許可をしてください	请将Flash Player存取摄像头的权限设为允许	請將Flash Player存取視訊的權限設為允許	
+bbb.presentation.uploadwindow.presentationfile	Presentation file	プレゼンテーションファイル	演示文件	文件	
+bbb.viewers.image.moderator	Moderator	教師	老師	老師	

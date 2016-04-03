@@ -1,0 +1,120 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'requires' => {},
+         'original_prefix' => {},
+         'xs_files' => undef,
+         'dist_version' => '0.01',
+         'create_makefile_pl' => 'traditional',
+         'install_path' => {},
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'use_tap_harness' => 0,
+         'needs_compiler' => '',
+         'dist_version_from' => 'lib/Animal.pm',
+         'conflicts' => {},
+         'tap_harness_args' => {},
+         'bundle_inc' => [],
+         'get_options' => {},
+         'has_config_data' => undef,
+         'config_dir' => '_build',
+         'prefix' => undef,
+         'create_license' => undef,
+         'dist_abstract' => undef,
+         'meta_merge' => {},
+         'license' => 'artistic_2',
+         'html_css' => '',
+         'dist_name' => 'Animal',
+         'mymetafile' => 'MYMETA.yml',
+         'create_packlist' => 1,
+         'orig_dir' => '/Users/apple/perl_code/ch13/ch13_test/Animal/Animal-0.01',
+         'mymetafile2' => 'MYMETA.json',
+         'meta_add' => {},
+         'debug' => undef,
+         'extra_compiler_flags' => [],
+         'debugger' => undef,
+         'blib' => 'blib',
+         'installdirs' => 'site',
+         'program_name' => undef,
+         'install_base' => undef,
+         'script_files' => undef,
+         'mb_version' => '0.4003',
+         'dist_suffix' => undef,
+         'quiet' => undef,
+         'pm_files' => undef,
+         'perl' => '/usr/bin/perl',
+         '_added_to_INC' => [],
+         'build_class' => 'Module::Build',
+         'config' => undef,
+         'module_name' => 'Animal',
+         'base_dir' => '/Users/apple/perl_code/ch13/ch13_test/Animal/Animal-0.01',
+         'share_dir' => undef,
+         'use_rcfile' => 1,
+         'destdir' => undef,
+         'PL_files' => undef,
+         'extra_linker_flags' => [],
+         'prefix_relpaths' => {},
+         'autosplit' => undef,
+         'recurse_into' => [],
+         'allow_mb_mismatch' => 0,
+         'install_base_relpaths' => {},
+         'verbose' => undef,
+         'create_readme' => undef,
+         'scripts' => undef,
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'test_files' => undef,
+         'magic_number' => undef,
+         'metafile' => 'META.yml',
+         'sign' => undef,
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'install_sets' => {},
+         'build_script' => 'Build',
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'pollute' => undef,
+         'recursive_test_files' => undef,
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'cpan_client' => 'cpan',
+         'pod_files' => undef,
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'bundle_inc_preload' => [],
+         'release_status' => 'stable',
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'recommends' => {},
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'dynamic_config' => 1,
+         'metafile2' => 'META.json',
+         'auto_configure_requires' => 1,
+         'include_dirs' => [],
+         'c_source' => undef,
+         'build_bat' => 0
+       }
+     ];
+$x; }

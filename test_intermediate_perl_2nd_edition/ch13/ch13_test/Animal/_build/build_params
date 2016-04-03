@@ -1,0 +1,122 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'scripts' => undef,
+         'dist_name' => 'Animal',
+         'use_tap_harness' => 0,
+         '_added_to_INC' => [],
+         'meta_merge' => {},
+         'meta_add' => {},
+         'dist_version' => '0.01',
+         'dist_suffix' => undef,
+         'module_name' => 'Animal',
+         'install_base_relpaths' => {},
+         'include_dirs' => [],
+         'config' => undef,
+         'create_makefile_pl' => 'traditional',
+         'mb_version' => '0.4003',
+         'orig_dir' => '/Users/apple/perl_code/ch13/ch13_test/Animal',
+         'get_options' => {},
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'share_dir' => undef,
+         'extra_linker_flags' => [],
+         'mymetafile2' => 'MYMETA.json',
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'extra_compiler_flags' => [],
+         'pod_files' => undef,
+         'autosplit' => undef,
+         'build_bat' => 0,
+         'original_prefix' => {},
+         'destdir' => undef,
+         'quiet' => undef,
+         'needs_compiler' => '',
+         'use_rcfile' => 1,
+         'metafile' => 'META.yml',
+         'mymetafile' => 'MYMETA.yml',
+         'dist_abstract' => undef,
+         'tap_harness_args' => {},
+         'debug' => undef,
+         'allow_mb_mismatch' => 0,
+         'auto_configure_requires' => 1,
+         'program_name' => undef,
+         'xs_files' => undef,
+         'script_files' => undef,
+         'install_sets' => {},
+         'base_dir' => '/Users/apple/perl_code/ch13/ch13_test/Animal',
+         'c_source' => undef,
+         'magic_number' => undef,
+         'debugger' => undef,
+         'create_readme' => undef,
+         'create_license' => undef,
+         'perl' => '/usr/bin/perl',
+         'pollute' => undef,
+         'conflicts' => {},
+         'bundle_inc_preload' => [],
+         'install_base' => undef,
+         'installdirs' => 'site',
+         'build_class' => 'Module::Build',
+         'pm_files' => undef,
+         'license' => 'artistic_2',
+         'recommends' => {},
+         'has_config_data' => undef,
+         'verbose' => undef,
+         'build_script' => 'Build',
+         'bundle_inc' => [],
+         'blib' => 'blib',
+         'prefix_relpaths' => {},
+         'html_css' => '',
+         'PL_files' => undef,
+         'cpan_client' => 'cpan',
+         'metafile2' => 'META.json',
+         'requires' => {
+                         'parent' => 0
+                       },
+         'recurse_into' => [],
+         'sign' => undef,
+         'test_files' => undef,
+         'release_status' => 'stable',
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'prefix' => undef,
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'dist_version_from' => 'lib/Animal.pm',
+         'create_packlist' => 1,
+         'recursive_test_files' => undef,
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'config_dir' => '_build',
+         'install_path' => {},
+         'dynamic_config' => 1
+       }
+     ];
+$x; }

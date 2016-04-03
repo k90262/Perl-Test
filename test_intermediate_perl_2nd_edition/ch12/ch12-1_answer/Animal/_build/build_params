@@ -1,0 +1,120 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'build_class' => 'Module::Build',
+         'PL_files' => undef,
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'pollute' => undef,
+         'config_dir' => '_build',
+         'blib' => 'blib',
+         'program_name' => undef,
+         'bundle_inc_preload' => [],
+         'conflicts' => {},
+         'recursive_test_files' => undef,
+         'prefix' => undef,
+         'cpan_client' => 'cpan',
+         'include_dirs' => [],
+         'c_source' => undef,
+         'dist_version_from' => 'lib/Animal.pm',
+         'test_files' => undef,
+         'create_readme' => undef,
+         'meta_merge' => {},
+         'meta_add' => {},
+         'auto_configure_requires' => 1,
+         'install_base' => undef,
+         'license' => 'artistic_2',
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'mymetafile' => 'MYMETA.yml',
+         'create_makefile_pl' => 'traditional',
+         'build_bat' => 0,
+         'build_script' => 'Build',
+         'original_prefix' => {},
+         'allow_mb_mismatch' => 0,
+         'sign' => undef,
+         'mymetafile2' => 'MYMETA.json',
+         'has_config_data' => undef,
+         'installdirs' => 'site',
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'dist_version' => '0.01',
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'magic_number' => undef,
+         'destdir' => undef,
+         'extra_compiler_flags' => [],
+         'dynamic_config' => 1,
+         'dist_suffix' => undef,
+         'get_options' => {},
+         'metafile2' => 'META.json',
+         'dist_name' => 'Animal',
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'share_dir' => undef,
+         'html_css' => '',
+         'recurse_into' => [],
+         'quiet' => undef,
+         'install_sets' => {},
+         '_added_to_INC' => [],
+         'extra_linker_flags' => [],
+         'create_license' => undef,
+         'debug' => undef,
+         'module_name' => 'Animal',
+         'base_dir' => '/Users/apple/perl_code/ch12/ch12-1_answer/Animal',
+         'dist_author' => [
+                            'Gilligan <gilligan@example.net>'
+                          ],
+         'install_path' => {},
+         'bundle_inc' => [],
+         'install_base_relpaths' => {},
+         'scripts' => undef,
+         'create_packlist' => 1,
+         'requires' => {},
+         'autosplit' => undef,
+         'recommends' => {},
+         'metafile' => 'META.yml',
+         'verbose' => undef,
+         'pm_files' => undef,
+         'prefix_relpaths' => {},
+         'release_status' => 'stable',
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'pod_files' => undef,
+         'debugger' => undef,
+         'mb_version' => '0.4003',
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'use_tap_harness' => 0,
+         'dist_abstract' => undef,
+         'tap_harness_args' => {},
+         'needs_compiler' => '',
+         'config' => undef,
+         'script_files' => undef,
+         'orig_dir' => '/Users/apple/perl_code/ch12/ch12-1_answer/Animal',
+         'perl' => '/usr/bin/perl',
+         'xs_files' => undef,
+         'use_rcfile' => 1
+       }
+     ];
+$x; }
