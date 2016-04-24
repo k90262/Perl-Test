@@ -1,0 +1,120 @@
+do{ my $x = [
+       {
+         'ARGV' => []
+       },
+       {},
+       {
+         'mb_version' => '0.4003',
+         'install_base_relpaths' => {},
+         'c_source' => undef,
+         'blib' => 'blib',
+         'meta_add' => {},
+         'config_dir' => '_build',
+         'mymetafile2' => 'MYMETA.json',
+         'tap_harness_args' => {},
+         'build_bat' => 0,
+         'debugger' => undef,
+         'verbose' => undef,
+         'sign' => undef,
+         'destdir' => undef,
+         'prefix' => undef,
+         'build_elements' => [
+                               'PL',
+                               'support',
+                               'pm',
+                               'xs',
+                               'share_dir',
+                               'pod',
+                               'script'
+                             ],
+         'module_name' => 'Animal',
+         'bundle_inc' => [],
+         'allow_mb_mismatch' => 0,
+         'recursive_test_files' => undef,
+         'metafile2' => 'META.json',
+         'dist_name' => 'Animal',
+         'original_prefix' => {},
+         'prefix_relpaths' => {},
+         'build_requires' => {
+                               'Test::More' => 0
+                             },
+         'meta_merge' => {},
+         'install_base' => undef,
+         'extra_compiler_flags' => [],
+         'pod_files' => undef,
+         'install_path' => {},
+         'license' => 'artistic_2',
+         'quiet' => undef,
+         'needs_compiler' => '',
+         'script_files' => undef,
+         'include_dirs' => [],
+         'has_config_data' => undef,
+         'xs_files' => undef,
+         'configure_requires' => {
+                                   'Module::Build' => 0
+                                 },
+         'create_license' => undef,
+         'config' => undef,
+         'base_dir' => '/Users/apple/perl_code/Perl-Test/test_intermediate_perl_2nd_edition/ch14/Animal',
+         'libdoc_dirs' => [
+                            'blib/lib',
+                            'blib/arch'
+                          ],
+         'build_script' => 'Build',
+         'pollute' => undef,
+         'bundle_inc_preload' => [],
+         'html_css' => '',
+         'release_status' => 'stable',
+         'dynamic_config' => 1,
+         'extra_linker_flags' => [],
+         'magic_number' => undef,
+         'prereq_action_types' => [
+                                    'requires',
+                                    'build_requires',
+                                    'conflicts',
+                                    'recommends'
+                                  ],
+         'bindoc_dirs' => [
+                            'blib/script'
+                          ],
+         'dist_suffix' => undef,
+         'create_readme' => undef,
+         'cpan_client' => 'cpan',
+         'metafile' => 'META.yml',
+         'share_dir' => undef,
+         'dist_version_from' => 'lib/Animal.pm',
+         'use_rcfile' => 1,
+         'dist_version' => '0.01',
+         'PL_files' => undef,
+         'perl' => '/usr/bin/perl',
+         '_added_to_INC' => [],
+         'recommends' => {},
+         'scripts' => undef,
+         'test_file_exts' => [
+                               '.t'
+                             ],
+         'conflicts' => {},
+         'get_options' => {},
+         'use_tap_harness' => 0,
+         'installdirs' => 'site',
+         'program_name' => undef,
+         'auto_configure_requires' => 1,
+         'dist_author' => [
+                            'Bill <bill@cloudigit.com>'
+                          ],
+         'requires' => {},
+         'mymetafile' => 'MYMETA.yml',
+         'test_files' => undef,
+         'dist_abstract' => undef,
+         'install_sets' => {},
+         'autosplit' => undef,
+         'create_makefile_pl' => 'traditional',
+         'create_packlist' => 1,
+         'recurse_into' => [],
+         'orig_dir' => '/Users/apple/perl_code/Perl-Test/test_intermediate_perl_2nd_edition/ch14/Animal',
+         'debug' => undef,
+         'build_class' => 'Module::Build',
+         'pm_files' => undef
+       }
+     ];
+$x; }
