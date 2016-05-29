@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings;
 
-use parent qw(LivingCreature);
+#use parent qw(LivingCreature);
 
 =head1 NAME
 
@@ -43,14 +43,16 @@ if you don't export anything, such as for a purely object-oriented module.
 
 # 在lib/Animal.pm檔案
 sub sound { 
-  die 'You have to define sound() in a subclass'
+  die 'You must define sound() in a subclass'
 }
 
 =head2 function2
 
 =cut
 
-sub function2 {
+sub speak {
+  my $class = shift;
+  print "a $class goes ", $class->sound, "!\n";
 }
 
 =head1 AUTHOR
