@@ -4,6 +4,8 @@ use 5.006;
 use strict;
 use warnings;
 
+use parent qw(LivingCreature);
+
 =head1 NAME
 
 Animal - The great new Animal!
@@ -39,7 +41,9 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =cut
 
-sub function1 {
+# 在lib/Animal.pm檔案
+sub sound { 
+  die 'You have to define sound() in a subclass'
 }
 
 =head2 function2
