@@ -67,13 +67,28 @@ my @random_array;
 
 my @origin_array = (1, 2, 3);
 
-@random_array = My::List::Util::sum(@origin_array);
+@random_array = My::List::Util::shuffle(@origin_array);
 
 print "random array: @random_array \n"; // andom array: 2 3 1
 
 =cut
 
 sub shuffle {
+  #print '@_ = ' . \@_ . "\n";
+  if(@_ < 1) {
+    die "parameters must not empty: $!";
+  }
+  my @shuffled = @_;
+  my $i = @shuffled;
+  while(--$i){
+    my $j = int rand ($i+1);
+    my $temp = $shuffled[$i];
+    $shuffled[$i] = $shuffled[$j];
+    $shuffled[$j] = $temp;
+  }
+  #print '@_ = ' . \@_ . "\n";
+  #print '@shuffled = ' . \@shuffled . "\n";
+  return @shuffled;
 }
 
 =head1 AUTHOR
