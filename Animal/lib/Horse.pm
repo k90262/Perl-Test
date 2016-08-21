@@ -46,13 +46,6 @@ if you don't export anything, such as for a purely object-oriented module.
 #our @ISA = qw(Animal);
 sub sound { 'neigh' }
 
-=head2 function2
-
-=cut
-
-sub function2 {
-}
-
 =head1 AUTHOR
 
 Bill, C<< <bill at cloudigit.com> >>

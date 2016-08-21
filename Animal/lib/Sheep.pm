@@ -36,7 +36,7 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 sound
 
 =cut
 
@@ -44,13 +44,6 @@ if you don't export anything, such as for a purely object-oriented module.
 #use Animal;
 #our @ISA = qw(Animal);
 sub sound { 'baaah' }
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 

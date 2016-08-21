@@ -37,26 +37,26 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 sound
+
+Mouse sound
 
 =cut
 
 # 在lib/Mouse.pm檔案
 sub sound { 'squeak' }
 
+=head2 speak
+
+mouse speak
+
+=cut
 sub speak {
   my $class = shift;
   #$class->Animal::speak(@_);  # 一團混亂？
   #$class->SUPER::speak;
   $class->SUPER::speak(@_);
   print "[but you can barely hear it!]\n";
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
 }
 
 =head1 AUTHOR

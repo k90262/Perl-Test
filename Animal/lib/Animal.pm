@@ -37,7 +37,10 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 sound
+
+Animal sound
+CAN NOT BE CALLED IMEDIATELY
 
 =cut
 
@@ -46,7 +49,9 @@ sub sound {
   die 'You must define sound() in a subclass'
 }
 
-=head2 function2
+=head2 speak
+
+human speak
 
 =cut
 
