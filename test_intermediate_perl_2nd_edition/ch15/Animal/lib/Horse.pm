@@ -46,11 +46,13 @@ sub sound {
   'neigh'
 }
 
-=head2 function2
+=head2 name
 
 =cut
 
-sub function2 {
+sub name {
+  my $self = shift;
+  $$self;
 }
 
 =head1 AUTHOR
