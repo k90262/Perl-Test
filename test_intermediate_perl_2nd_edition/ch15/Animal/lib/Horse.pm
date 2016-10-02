@@ -46,15 +46,6 @@ sub sound {
   'neigh'
 }
 
-=head2 name
-
-=cut
-
-sub name {
-  my $self = shift;
-  $$self;
-}
-
 =head1 AUTHOR
 
 Bill, C<< <bill at cloudigit.com> >>
