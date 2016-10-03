@@ -1,12 +1,15 @@
-package Animal;
+package Sheep;
 
 use 5.006;
 use strict;
 use warnings;
 
+use Animal;
+@Sheep::ISA = qw(Animal);
+
 =head1 NAME
 
-Animal - The great new Animal!
+Sheep - The great new Sheep!
 
 =head1 VERSION
 
@@ -23,9 +26,9 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use Animal;
+    use Sheep;
 
-    my $foo = Animal->new();
+    my $foo = Sheep->new();
     ...
 
 =head1 EXPORT
@@ -35,71 +38,18 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 speak
+=head2 function1
 
 =cut
 
-sub speak {
-  my $either = shift;
-  print $either->name, " goes ", $either->sound, "!\n";
-}
-
-=head2 name
-
-=cut
-
-sub name {
-  my $either = shift;
-  ref $either
-    ? $either->{Name}		#若是實體，回傳名稱
-    : "an unnamed $either";	#若是類別，傳回通用訊息
-}
-
-=head2 named
-
-=cut
-
-sub named {
-  # my( $class, $name ) = @_; # as like using the shift method below.
-  my $class = shift;
-  my $name = shift;
-  my $self = { Name => $name, Color => $class->default_color };
-  bless $self, $class;
-}
-
-=head2 eat
-
-=cut
-
-sub eat {
-  my $either = shift;
-  my $food = shift;
-  print $either->name, " eat $food.\n";
+sub function1 {
 }
 
 =head2 default_color
 
 =cut
 
-sub default_color { 'brown' }
-
-=head2 color
-
-=cut
-
-sub color { 
-  my $self = shift;
-  $self->{Color}; 
-}
-
-=head2 set_color
-
-=cut
-
-sub set_color { 
-  my $self = shift;
-  $self->{Color} = shift;
-}
+sub default_color { 'white' }
 
 =head1 AUTHOR
 
@@ -107,8 +57,8 @@ Bill, C<< <bill at cloudigit.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-animal at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Animal>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-. at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=.>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -118,7 +68,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Animal
+    perldoc Sheep
 
 
 You can also look for information at:
@@ -127,19 +77,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Animal>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=.>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Animal>
+L<http://annocpan.org/dist/.>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Animal>
+L<http://cpanratings.perl.org/d/.>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Animal/>
+L<http://search.cpan.org/dist/./>
 
 =back
 
@@ -190,4 +140,4 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Animal
+1; # End of Sheep
