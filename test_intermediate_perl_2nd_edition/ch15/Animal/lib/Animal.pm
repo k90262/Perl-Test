@@ -40,8 +40,8 @@ if you don't export anything, such as for a purely object-oriented module.
 =cut
 
 sub speak {
-  my $class = shift;
-  print "a $class goes ", $class->sound, "!\n";
+  my $either = shift;
+  print $either->name, " goes ", $either->sound, "!\n";
 }
 
 =head2 name
@@ -49,8 +49,10 @@ sub speak {
 =cut
 
 sub name {
-  my $self = shift;
-  $$self;
+  my $either = shift;
+  ref $either
+    ? $$either			#若是實體，回傳名稱
+    : "an unnamed $either";	#若是類別，傳回通用訊息
 }
 
 =head2 named
