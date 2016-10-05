@@ -45,6 +45,11 @@ if you don't export anything, such as for a purely object-oriented module.
 #our @ISA = qw(Animal);
 sub sound { 'baaah' }
 
+=head2 default_color
+=cut
+
+sub default_color { 'white' }
+
 =head1 AUTHOR
 
 Bill, C<< <bill at cloudigit.com> >>

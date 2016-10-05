@@ -3,6 +3,7 @@ package Animal;
 use 5.006;
 use strict;
 use warnings;
+use Carp qw(carp croak);
 
 #use parent qw(LivingCreature);
 
@@ -37,6 +38,19 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
+=head2 named
+
+Constructor
+
+=cut
+
+sub named {
+  my $class = shift;
+  my $name = shift;
+  my $self = { Name => $name, Color => $class->default_color };
+  bless $self, $class;
+}
+
 =head2 sound
 
 Animal sound
@@ -56,9 +70,53 @@ human speak
 =cut
 
 sub speak {
-  my $class = shift;
-  print "a $class goes ", $class->sound, "!\n";
+  my $either = shift;
+  print $either->name, " goes ", $either->sound, "!\n";
 }
+
+=head2 name
+=cut
+
+sub name {
+  my $either = shift;
+  ref $either
+    ? $either->{Name} 		#若是實體，回傳名稱
+    : "an unnamed $either";	#若是類別，回傳通用訊息
+}
+
+=head2 set_name
+=cut
+
+sub set_name {
+  ref(my $self = shift) or croak "instance variable needed";
+  my $name = shift;
+  $self->{Name} = $name;
+  $self;
+} 
+
+=head2 color
+=cut
+
+sub color {
+  my $either = shift;
+  ref $either
+    ? $either->{Color}
+    : $either->default_color;
+}
+
+=head2 set_color
+=cut
+
+sub set_color {
+  ref(my $self = shift) or croak "instance variable needed";
+  my $color = shift;
+  $self->{Color} = $color;
+}
+
+=head2 default_color
+=cut
+
+sub default_color { 'brown' }
 
 =head1 AUTHOR
 
