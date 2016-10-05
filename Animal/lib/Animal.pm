@@ -45,7 +45,7 @@ Constructor
 =cut
 
 sub named {
-  my $class = shift;
+  ref(my $class = shift) and croak "class name needed";
   my $name = shift;
   my $self = { Name => $name, Color => $class->default_color };
   bless $self, $class;
@@ -59,9 +59,7 @@ CAN NOT BE CALLED IMEDIATELY
 =cut
 
 # 在lib/Animal.pm檔案
-sub sound { 
-  die 'You must define sound() in a subclass'
-}
+sub sound { croak 'subclass must define a sound' }
 
 =head2 speak
 
@@ -89,9 +87,7 @@ sub name {
 
 sub set_name {
   ref(my $self = shift) or croak "instance variable needed";
-  my $name = shift;
-  $self->{Name} = $name;
-  $self;
+  $self->{Name} = shift;
 } 
 
 =head2 color
@@ -109,13 +105,13 @@ sub color {
 
 sub set_color {
   ref(my $self = shift) or croak "instance variable needed";
-  my $color = shift;
-  $self->{Color} = $color;
+  $self->{Color} = shift;
 }
 
 =head2 default_color
 =cut
 
+## 萬一沒有預設值得預設值（應該被覆寫）
 sub default_color { 'brown' }
 
 =head1 AUTHOR
