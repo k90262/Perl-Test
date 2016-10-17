@@ -57,3 +57,12 @@ if (eval { $tv_horse->can('eat') }) {
 if (eval { $tv_horse->can('fandango') }) {
   $tv_horse->fandango;
 }
+
+#
+# AUTOLOAD
+#
+
+$tv_horse->eat('hay');
+
+$tv_horse->set_height('180');
+print 'After set_height to 180, $tv_horse\'s height is ', $tv_horse->height(), "\n";

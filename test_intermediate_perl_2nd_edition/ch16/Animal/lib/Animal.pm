@@ -3,6 +3,7 @@ package Animal;
 use 5.006;
 use strict;
 use warnings;
+use Carp qw(croak);
 
 =head1 NAME
 
@@ -77,29 +78,72 @@ sub eat {
   print $either->name, " eat $food.\n";
 }
 
+#sub AUTOLOAD {
+#  our $AUTOLOAD;
+#  (my $method = $AUTOLOAD) =~ s/.*:://s; # 移除套件名稱    
+#  if ($method eq "eat") {
+#    ## 定義eat
+#    eval q{
+#      sub eat {
+#        my $either = shift;
+#        my $food = shift;
+#        print $either->name, " eat $food.\n";
+#      }
+#    };              # eval的q{} string處理結束
+#    die $@ if $@;   # 如果鍵入有錯
+#    goto &eat;      # 程式跳到這裡
+#  } else {              #未知方法
+#    croak "$_[0] does not know hewo to $method\n";
+#  }
+#}
+
 =head2 default_color
 
 =cut
 
 sub default_color { 'brown' }
 
-=head2 color
-
-=cut
-
-sub color { 
-  my $self = shift;
-  $self->{Color}; 
+sub AUTOLOAD {
+  my @elements = qw(color age weight height);
+  our $AUTOLOAD;
+  if ($AUTOLOAD =~ /::(\w+)$/ and grep $1 eq $_, @elements) {
+    my $field = ucfirst $1;
+    {
+      no strict 'refs';
+      *$AUTOLOAD = sub { $_[0]->{$field} };
+    }
+    goto &$AUTOLOAD;
+  }
+  elsif ($AUTOLOAD =~ /::set_(\w+)$/ and grep $1 eq $_, @elements) {
+    my $field = ucfirst $1;
+    {
+      no strict 'refs';
+      *$AUTOLOAD = sub { $_[0]->{$field} = $_[1] };
+    }
+    goto &$AUTOLOAD;
+  }
+  else {
+    (my $method = $AUTOLOAD) =~ s/.*:://s; #移除套件名稱
+    croak "$_[0] does not understand $method\n";
+  }
 }
-
-=head2 set_color
-
-=cut
-
-sub set_color { 
-  my $self = shift;
-  $self->{Color} = shift;
-}
+#=head2 color
+#
+#=cut
+#
+#sub color { 
+#  my $self = shift;
+#  $self->{Color}; 
+#}
+#
+#=head2 set_color
+#
+#=cut
+#
+#sub set_color { 
+#  my $self = shift;
+#  $self->{Color} = shift;
+#}
 
 =head1 AUTHOR
 
