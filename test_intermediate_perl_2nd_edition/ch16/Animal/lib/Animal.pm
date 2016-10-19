@@ -36,24 +36,21 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 speak
+=cut
+
+use Class::MethodMaker 
+  new_with_init => 'new',
+  get_set       => [qw( -eiffel color height name age )], # !!!!! SYNTAX HAS CHANGED (PERL INTERMEDIATE BOOK IS WRONG!)!!!!
+  abstract      => [qw(sound)],
+;
+
+=head2 init
 
 =cut
 
-sub speak {
-  my $either = shift;
-  print $either->name, " goes ", $either->sound, "!\n";
-}
-
-=head2 name
-
-=cut
-
-sub name {
-  my $either = shift;
-  ref $either
-    ? $either->{Name}		#若是實體，回傳名稱
-    : "an unnamed $either";	#若是類別，傳回通用訊息
+sub init {
+  my $self = shift;
+  $self->set_color($self->default_color);    
 }
 
 =head2 named
@@ -61,11 +58,18 @@ sub name {
 =cut
 
 sub named {
-  # my( $class, $name ) = @_; # as like using the shift method below.
-  my $class = shift;
-  my $name = shift;
-  my $self = { Name => $name, Color => $class->default_color };
-  bless $self, $class;
+  my $self = shift->new;
+  $self->set_name(shift);
+  $self;    
+}
+
+=head2 speak
+
+=cut
+
+sub speak {
+  my $self = shift;
+  print $self->name, ' goes ', $self->sound, "\n";    
 }
 
 =head2 eat
@@ -73,77 +77,18 @@ sub named {
 =cut
 
 sub eat {
-  my $either = shift;
+  my $self = shift;
   my $food = shift;
-  print $either->name, " eat $food.\n";
+  print $self->name, " eats $food\n";    
 }
-
-#sub AUTOLOAD {
-#  our $AUTOLOAD;
-#  (my $method = $AUTOLOAD) =~ s/.*:://s; # 移除套件名稱    
-#  if ($method eq "eat") {
-#    ## 定義eat
-#    eval q{
-#      sub eat {
-#        my $either = shift;
-#        my $food = shift;
-#        print $either->name, " eat $food.\n";
-#      }
-#    };              # eval的q{} string處理結束
-#    die $@ if $@;   # 如果鍵入有錯
-#    goto &eat;      # 程式跳到這裡
-#  } else {              #未知方法
-#    croak "$_[0] does not know hewo to $method\n";
-#  }
-#}
 
 =head2 default_color
 
 =cut
 
-sub default_color { 'brown' }
-
-sub AUTOLOAD {
-  my @elements = qw(color age weight height);
-  our $AUTOLOAD;
-  if ($AUTOLOAD =~ /::(\w+)$/ and grep $1 eq $_, @elements) {
-    my $field = ucfirst $1;
-    {
-      no strict 'refs';
-      *$AUTOLOAD = sub { $_[0]->{$field} };
-    }
-    goto &$AUTOLOAD;
-  }
-  elsif ($AUTOLOAD =~ /::set_(\w+)$/ and grep $1 eq $_, @elements) {
-    my $field = ucfirst $1;
-    {
-      no strict 'refs';
-      *$AUTOLOAD = sub { $_[0]->{$field} = $_[1] };
-    }
-    goto &$AUTOLOAD;
-  }
-  else {
-    (my $method = $AUTOLOAD) =~ s/.*:://s; #移除套件名稱
-    croak "$_[0] does not understand $method\n";
-  }
+sub default_color {
+  'brown';    
 }
-#=head2 color
-#
-#=cut
-#
-#sub color { 
-#  my $self = shift;
-#  $self->{Color}; 
-#}
-#
-#=head2 set_color
-#
-#=cut
-#
-#sub set_color { 
-#  my $self = shift;
-#  $self->{Color} = shift;
-#}
 
 =head1 AUTHOR
 

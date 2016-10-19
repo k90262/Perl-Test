@@ -6,6 +6,7 @@ use warnings;
 
 use Animal;
 @Horse::ISA = qw(Animal);
+#use parent qw(Animal);
 
 =head1 NAME
 
