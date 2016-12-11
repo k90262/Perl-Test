@@ -24,7 +24,7 @@ sub AUTOLOAD {
     $methods{year} = $year+1900;
     #$methods{year} = 1900; // troubleshooting
     $methods{month} = $mon+1;
-    $methods{day} = $mday+1; 
+    $methods{day} = $mday+0; 
 
     return $methods{$method};
   } else {
