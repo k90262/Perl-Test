@@ -30,7 +30,15 @@ use strict;
 MyDate->import; # we don't use it
 my $date = MyDate->new();
 
+sub UNIVERSAL::debug {
+  my $self = shift;
+  my $when = localtime;
+  my $message = join '|', @_;
+  print "[$when] $message\n";
+}
+
 print "The date is " . $date->date . "\n";
 print "The month is " . $date->month . "\n";
 print "The year is " . $date->year . "\n";
 
+$date->debug("I'm all done");
