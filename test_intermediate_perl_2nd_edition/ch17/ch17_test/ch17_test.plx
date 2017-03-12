@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w 
 use strict;
 #require 'Oogaboogoo/Date.pm';
-use Oogaboogoo::Date;
+use Oogaboogoo::Date qw(:all);
 
 my($sec, $min, $hour, $mday, $mon, $year, $wday) = localtime;
 
