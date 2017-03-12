@@ -1,13 +1,19 @@
 package Oogaboogoo::Date;
 use strict;
+use Exporter qw(import);
+our @EXPORT = qw(day mon);
+our @EXPORT_OK = qw();
 
-sub import {
-  my $package = caller;
-  for (qw(day mon)) {
-    no strict 'refs';
-    *{$package . "::$_"} = \&$_;
-  }
-}
+our %EXPORT_TAGS = (
+  all => [ @EXPORT, @EXPORT_OK ],
+);
+#sub import {
+#  my $package = caller;
+#  for (qw(day mon)) {
+#    no strict 'refs';
+#    *{$package . "::$_"} = \&$_;
+#  }
+#}
 
 my @day = qw(ark dip wap sen pop sep kir);
 my @mon = qw(diz pod bod rod sip wax lin sen kun fiz nap dep);
