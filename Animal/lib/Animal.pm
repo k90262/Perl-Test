@@ -108,8 +108,23 @@ sub set_color {
   $self->{Color} = shift;
 }
 
-=head2 default_color
+=head2 eat
+
 =cut
+
+sub eat {
+  my $self = shift;
+  my $food = shift;
+  print $self->name, " eats $food\n";    
+}
+
+=head2 destructotr
+=cut
+
+sub DESTROY {
+  my $self = shift;
+  print '[', $self->name, "has died.]\n";
+}
 
 ## 萬一沒有預設值得預設值（應該被覆寫）
 sub default_color { 'brown' }
