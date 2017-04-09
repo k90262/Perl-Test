@@ -4,6 +4,7 @@ use 5.006;
 use strict;
 use warnings;
 use Carp qw(carp croak);
+use File::Temp qw(tempfile);
 
 #use parent qw(LivingCreature);
 
@@ -48,6 +49,12 @@ sub named {
   ref(my $class = shift) and croak "class name needed";
   my $name = shift;
   my $self = { Name => $name, Color => $class->default_color };
+  ## 此處為新的程式碼...
+  my($fh, $filename) = tempfile();
+  $self->{temp_fh} = $fh;
+  $self->{temp_filename} = $filename;
+  #print "[debug] temp filename: $filename\n";
+  ## .. 新的程式碼到這裡
   bless $self, $class;
 }
 
@@ -123,6 +130,9 @@ sub eat {
 
 sub DESTROY {
   my $self = shift;
+  my $fh = $self->{temp_fh};
+  close $fh;
+  unlink $self->{temp_filename};
   print '[', $self->name, "has died.]\n";
 }
 
