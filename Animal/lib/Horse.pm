@@ -37,7 +37,7 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 sound
 
 =cut
 
@@ -45,6 +45,15 @@ if you don't export anything, such as for a purely object-oriented module.
 #use Animal;
 #our @ISA = qw(Animal);
 sub sound { 'neigh' }
+
+=head2 destructotr
+=cut
+
+sub DESTROY {
+  my $self = shift;
+  $self->SUPER::DESTROY if $self->can( 'SUPER::DESTROY' );
+  print '[', $self->name, "has gone off to the glue factory.]\n";
+}
 
 =head1 AUTHOR
 
