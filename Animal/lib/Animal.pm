@@ -45,6 +45,7 @@ Constructor
 
 =cut
 
+my %REGISTRY;
 sub named {
   ref(my $class = shift) and croak "class name needed";
   my $name = shift;
@@ -56,6 +57,15 @@ sub named {
   #print "[debug] temp filename: $filename\n";
   ## .. 新的程式碼到這裡
   bless $self, $class;
+  $REGISTRY{$self} = $self; # 也回傳$self
+}
+
+=head2 registered
+
+=cut
+
+sub registered {
+  return map { 'a '.ref($_)." named ".$_->name  } values %REGISTRY;
 }
 
 =head2 sound
