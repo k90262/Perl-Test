@@ -5,6 +5,7 @@ use strict;
 use warnings;
 use Carp qw(carp croak);
 use File::Temp qw(tempfile);
+use Scalar::Util qw(weaken);
 
 #use parent qw(LivingCreature);
 
@@ -58,6 +59,8 @@ sub named {
   ## .. 新的程式碼到這裡
   bless $self, $class;
   $REGISTRY{$self} = $self; # 也回傳$self
+  weaken($REGISTRY{$self});
+  $self;
 }
 
 =head2 registered
@@ -144,6 +147,7 @@ sub DESTROY {
   close $fh;
   unlink $self->{temp_filename};
   print '[', $self->name, "has died.]\n";
+  delete $REGISTRY{$self};
 }
 
 ## 萬一沒有預設值得預設值（應該被覆寫）
