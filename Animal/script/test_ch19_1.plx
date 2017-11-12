@@ -9,3 +9,7 @@ my $talking = Horse->new( name => "Mr. Ed" );
 #say $talking->name, ' is colored ', $talking->color;
 $talking->speak;
 
+use Sheep;
+#my $baab = Sheep->new( color => 'white', name => 'Baab');
+my $baab = Sheep->new( name => 'Baab');
+$baab->speak;
