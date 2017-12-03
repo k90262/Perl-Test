@@ -10,6 +10,10 @@ my $talking = Horse->new( name => "Mr. Ed" );
 $talking->speak;
 
 use Sheep;
-#my $baab = Sheep->new( color => 'white', name => 'Baab');
-my $baab = Sheep->new( name => 'Baab');
+my $baab = Sheep->new( color => 'white', name => 'Baab');
+#my $baab = Sheep->new( name => 'Baab');
+$baab->speak;
+
+#$baab->color( 'Dolly' ); # 哎呀，這是個名稱！
+$baab->color( 'black' );
 $baab->speak;
