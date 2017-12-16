@@ -18,7 +18,19 @@ use namespace::autoclean;
 
 requires qw( sound default_color );
 
-has 'name' => ( is => 'rw' );
+has 'name' => ( 
+  is => 'rw',
+  #default => sub { 'an unnamed ' . ref shift},
+  required => 1,
+);
+around 'name' => sub {
+  #print "trace around 'name'...\n";
+  my $next = shift;
+  my $self = shift;
+  blessed $self ? $self->$next(@_) : "an unnamed $self";
+  #blessed $self ? $self->$next(@_) : print "an unnamed $self\n";
+};
+
 has 'color'=> ( 
   is => 'rw',
   default => sub { shift->default_color },

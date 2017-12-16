@@ -17,3 +17,13 @@ $baab->speak;
 #$baab->color( 'Dolly' ); # 哎呀，這是個名稱！
 $baab->color( 'black' );
 $baab->speak;
+
+use Mouse;
+my $mickey = Mouse->new( name => 'Mickey' );
+$mickey->speak;
+
+#test
+my $no_name_mickey = Mouse->new();
+print $mickey->name, "\n";
+print Mouse->name, "\n";
+print $no_name_mickey->name, "\n";
