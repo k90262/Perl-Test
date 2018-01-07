@@ -3,7 +3,7 @@ use Moose::Role;
 {
   use Moose::Util::TypeConstraints;
 #  use namespace::autoclean;
-  enum 'ColorStr' => [qw( white brown black )];
+  enum 'ColorStr' => [qw( white brown black green )];
 #  {
 #    my %colors = map { $_, 1 } qw( white brown black );
 #    subtype 'ColorStr'
@@ -21,7 +21,7 @@ requires qw( sound default_color );
 has 'name' => ( 
   is => 'rw',
   #default => sub { 'an unnamed ' . ref shift},
-  required => 1,
+  #required => 1,
 );
 around 'name' => sub {
   #print "trace around 'name'...\n";
@@ -32,7 +32,9 @@ around 'name' => sub {
 };
 
 has 'color'=> ( 
-  is => 'rw',
+  #is => 'rw',
+  is => 'ro',
+  writer => '_private_set_color',
   default => sub { shift->default_color },
   isa => 'ColorStr'
 );
