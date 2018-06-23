@@ -1,0 +1,3 @@
+mail_folder: /Users/apple/Library/Mail/V5
+mail_folder_of_sample: /Users/apple/Library/Mail/V5/1EFAE0BE-8181-4883-B7FA-A78D2CCD1606/993.mbox/Sent Messages.mbox/C805F175-A986-409A-901F-5A495C0C6D1E/Data/1/Messages 
+author_website: http://regex.info/

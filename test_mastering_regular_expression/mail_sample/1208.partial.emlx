@@ -1,0 +1,314 @@
+18299     
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_A1EEFE38-BACE-4948-AD1A-54802F5E1597"
+Subject: Re: webRTC
+X-Universally-Unique-Identifier: 8916F7CA-7626-4CF6-BB5E-E683CFB6F537
+From: ycho <k90262xp@hotmail.com>
+BCC: <k90262xp@hotmail.com>
+In-Reply-To: <CAMbWF9aO0sGVpbtf477MDH5qPdf6V9kBVzPz3h8M-NSDf9SFcA@mail.gmail.com>
+Date: Sun, 13 Nov 2016 17:41:29 +0800
+Message-ID: <CC03A017-F39F-48BA-8CDE-016E96AA5A87@hotmail.com>
+X-Smtp-Server: 4A70B848-898B-4044-B591-AD7C0A7A96EE
+References: <CAMbWF9aO0sGVpbtf477MDH5qPdf6V9kBVzPz3h8M-NSDf9SFcA@mail.gmail.com>
+To: Patrick Whalen <patrick@cloudigit.com>
+
+
+--Apple-Mail=_A1EEFE38-BACE-4948-AD1A-54802F5E1597
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=big5
+
+Hi, Patrick
+
+Hope you well, too.
+
+Do you has checkout the stun/turn-server connection setting of the file =
+bbb_webrtc_bridge_sip.js ? Sometimes we forgot to change it if we change =
+url manually.
+
+Path of NTU env: =
+/home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/lib/bbb_webrtc_=
+bridge_sip.js
+
+(Path of source code/git: =
+bigbluebutton-client/resources/prod/lib/bbb_webrtc_bridge_sip.js)
+
+181         /* VERY IMPORTANT=20
+182          *      - You must escape the username because spaces will =
+cause the connection to fail
+183          *      - We are connecting to the websocket through an =
+nginx redirect instead of directly to 5066
+184          */
+185         var configuration =3D {
+186                 uri: 'sip:' + encodeURIComponent(username) + '@' + =
+server,
+187                 wsServers: 'wss://' + server + ':443/ws',
+188                 displayName: username,
+189                 register: false,
+190                 traceSip: true,
+191                 autostart: false,
+192                 userAgentString: "BigBlueButton",
+193                 stunServers: "stun:192.168.8.119",
+194                 turnServers: {
+195                                 'urls': 'turn:192.168.8.119:3478',
+196                                 'username': 'cloudpe',
+197                                 'password': 'cloud123'
+198                         }
+199         };
+
+Please make sure that the url setting of sturnServers and turnServers =
+are NTU=A1=A6s url.
+
+
+For more details, please checkout my script in git: =
+scripts/shell/change_IP_and_Port.sh
+
+I hope the problem is just due to the turn/stun server setting in =
+bbb_webrtc_bridge_sip.js.
+
+FYI
+
+Have a nice day,
+
+Bill.
+
+> Patrick Whalen <patrick@cloudigit.com> =A9=F3 2016=A6~11=A4=EB11=A4=E9 =
+=A4U=A4=C85:34 =BCg=B9D=A1G
+>=20
+> Bill,
+>=20
+> Hope you well.=20
+>=20
+> Do you remember the problem we had with changing the URL and WebRTC?
+>=20
+> We changed URL for NTU and now WebRTC doesn't work. Was there a file I =
+need to change outside directory dev/bigbluebutton/  ?
+>=20
+> thanks,
+> Patrick
+
+
+--Apple-Mail=_A1EEFE38-BACE-4948-AD1A-54802F5E1597
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=big5
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dbig5"></h=
+ead><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit=
+-line-break: after-white-space;" class=3D"">Hi, Patrick<div class=3D""><br =
+class=3D""></div><div class=3D"">Hope you well, too.</div><div class=3D""><=
+br class=3D""></div><div class=3D"">Do you has checkout the stun/turn-serve=
+r connection setting of the file&nbsp;<font face=3D"Menlo" class=3D"">bbb_w=
+ebrtc_bridge_sip.js ? Sometimes we&nbsp;forgot to change it if we change ur=
+l manually.</font></div><div class=3D""><span style=3D"font-family: Menlo;"=
+ class=3D""><br class=3D""></span></div><blockquote style=3D"margin: 0 0 0 =
+40px; border: none; padding: 0px;" class=3D""><div class=3D""><span style=
+=3D"font-family: Menlo;" class=3D"">Path of NTU env: </span><span style=3D"=
+font-family: Menlo; font-size: 18px;" class=3D"">/home/firstuser/dev/bigblu=
+ebutton/bigbluebutton-client/bin/lib/bbb_webrtc_bridge_sip.js</span></div><=
+div class=3D""><span style=3D"font-family: Menlo;" class=3D""><br class=3D"=
+"></span></div><div class=3D""><span style=3D"font-family: Menlo;" class=3D=
+"">(Path of source code/git:&nbsp;</span><span style=3D"font-family: Menlo;=
+ font-size: 18px;" class=3D"">bigbluebutton-client/resources/prod/lib/bbb_w=
+ebrtc_bridge_sip.js</span><span style=3D"font-family: Menlo;" class=3D"">)<=
+/span></div><div class=3D""><font face=3D"Menlo" size=3D"4" class=3D""><br =
+class=3D""></font></div><div class=3D""><div style=3D"margin: 0px; font-siz=
+e: 18px; line-height: normal; font-family: Menlo; color: rgb(45, 230, 33);"=
+ class=3D""><span style=3D"font-variant-ligatures: no-common-ligatures; col=
+or: #ce7924" class=3D"">181 </span><span style=3D"font-variant-ligatures: n=
+o-common-ligatures; color: #000000" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; =
+</span><span style=3D"font-variant-ligatures: no-common-ligatures" class=3D=
+"">/* VERY IMPORTANT&nbsp;</span></div></div><div class=3D""><div style=3D"=
+margin: 0px; font-size: 18px; line-height: normal; font-family: Menlo; colo=
+r: rgb(45, 230, 33);" class=3D""><span style=3D"font-variant-ligatures: no-=
+common-ligatures; color: #ce7924" class=3D"">182&nbsp;</span><span style=3D=
+"font-variant-ligatures: no-common-ligatures" class=3D""> &nbsp; &nbsp; &nb=
+sp; &nbsp; *&nbsp; &nbsp; &nbsp; - You must escape the username because spa=
+ces will cause the connection to fail</span></div></div><div class=3D""><di=
+v style=3D"margin: 0px; font-size: 18px; line-height: normal; font-family: =
+Menlo; color: rgb(45, 230, 33);" class=3D""><span style=3D"font-variant-lig=
+atures: no-common-ligatures; color: #ce7924" class=3D"">183&nbsp;</span><sp=
+an style=3D"font-variant-ligatures: no-common-ligatures" class=3D""> &nbsp;=
+ &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; - We are connecting to the webs=
+ocket through an nginx redirect instead of directly to 5066</span></div></d=
+iv><div class=3D""><div style=3D"margin: 0px; font-size: 18px; line-height:=
+ normal; font-family: Menlo; color: rgb(45, 230, 33);" class=3D""><span sty=
+le=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924" class=3D=
+"">184&nbsp;</span><span style=3D"font-variant-ligatures: no-common-ligatur=
+es" class=3D""> &nbsp; &nbsp; &nbsp; &nbsp; */</span></div></div><div class=
+=3D""><div style=3D"margin: 0px; font-size: 18px; line-height: normal; font=
+-family: Menlo;" class=3D""><span style=3D"font-variant-ligatures: no-commo=
+n-ligatures; color: #ce7924" class=3D"">185 </span><span style=3D"font-vari=
+ant-ligatures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; =
+</span><span style=3D"font-variant-ligatures: no-common-ligatures; color: #=
+34bbc7" class=3D"">var</span><span style=3D"font-variant-ligatures: no-comm=
+on-ligatures" class=3D""> configuration =3D </span><span style=3D"font-vari=
+ant-ligatures: no-common-ligatures; color: #34bbc7" class=3D"">{</span></di=
+v></div><div class=3D""><div style=3D"margin: 0px; font-size: 18px; line-he=
+ight: normal; font-family: Menlo;" class=3D""><span style=3D"font-variant-l=
+igatures: no-common-ligatures; color: #ce7924" class=3D"">186 </span><span =
+style=3D"font-variant-ligatures: no-common-ligatures" class=3D"">&nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; uri: </span><span style=3D"fo=
+nt-variant-ligatures: no-common-ligatures; color: #c33720" class=3D"">'<a h=
+ref=3D"sip:'" class=3D"">sip:'</a></span><span style=3D"font-variant-ligatu=
+res: no-common-ligatures" class=3D""> &#43; encodeURIComponent(username) &#=
+43; </span><span style=3D"font-variant-ligatures: no-common-ligatures; colo=
+r: #c33720" class=3D"">'@'</span><span style=3D"font-variant-ligatures: no-=
+common-ligatures" class=3D""> &#43; server,</span></div></div><div class=3D=
+""><div style=3D"margin: 0px; font-size: 18px; line-height: normal; font-fa=
+mily: Menlo;" class=3D""><span style=3D"font-variant-ligatures: no-common-l=
+igatures; color: #ce7924" class=3D"">187 </span><span style=3D"font-variant=
+-ligatures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; </span><span style=3D"font-variant-ligatures: no-c=
+ommon-ligatures; background-color: #e6e600" class=3D"">ws</span><span style=
+=3D"font-variant-ligatures: no-common-ligatures" class=3D"">Servers: </span=
+><span style=3D"font-variant-ligatures: no-common-ligatures; color: #c33720=
+" class=3D"">'</span><span style=3D"font-variant-ligatures: no-common-ligat=
+ures; color: #991200; background-color: #e6e600" class=3D"">ws</span><span =
+style=3D"font-variant-ligatures: no-common-ligatures; color: #c33720" class=
+=3D""><a href=3D"s://'" class=3D"">s://'</a></span><span style=3D"font-vari=
+ant-ligatures: no-common-ligatures" class=3D""> &#43; server &#43; </span><=
+span style=3D"font-variant-ligatures: no-common-ligatures; color: #c33720" =
+class=3D"">':443/</span><span style=3D"font-variant-ligatures: no-common-li=
+gatures; color: #991200; background-color: #e6e600" class=3D"">ws</span><sp=
+an style=3D"font-variant-ligatures: no-common-ligatures; color: #c33720" cl=
+ass=3D"">'</span><span style=3D"font-variant-ligatures: no-common-ligatures=
+" class=3D"">,</span></div></div><div class=3D""><div style=3D"margin: 0px;=
+ font-size: 18px; line-height: normal; font-family: Menlo;" class=3D""><spa=
+n style=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924" cla=
+ss=3D"">188 </span><span style=3D"font-variant-ligatures: no-common-ligatur=
+es" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; disp=
+layName: username,</span></div></div><div class=3D""><div style=3D"margin: =
+0px; font-size: 18px; line-height: normal; font-family: Menlo;" class=3D"">=
+<span style=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924"=
+ class=3D"">189 </span><span style=3D"font-variant-ligatures: no-common-lig=
+atures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+register: </span><span style=3D"font-variant-ligatures: no-common-ligatures=
+; color: #c33720" class=3D"">false</span><span style=3D"font-variant-ligatu=
+res: no-common-ligatures" class=3D"">,</span></div></div><div class=3D""><d=
+iv style=3D"margin: 0px; font-size: 18px; line-height: normal; font-family:=
+ Menlo;" class=3D""><span style=3D"font-variant-ligatures: no-common-ligatu=
+res; color: #ce7924" class=3D"">190 </span><span style=3D"font-variant-liga=
+tures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; traceSip: </span><span style=3D"font-variant-ligatures:=
+ no-common-ligatures; color: #c33720" class=3D"">true</span><span style=3D"=
+font-variant-ligatures: no-common-ligatures" class=3D"">,</span></div></div=
+><div class=3D""><div style=3D"margin: 0px; font-size: 18px; line-height: n=
+ormal; font-family: Menlo;" class=3D""><span style=3D"font-variant-ligature=
+s: no-common-ligatures; color: #ce7924" class=3D"">191 </span><span style=
+=3D"font-variant-ligatures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; autostart: </span><span style=3D"f=
+ont-variant-ligatures: no-common-ligatures; color: #c33720" class=3D"">fals=
+e</span><span style=3D"font-variant-ligatures: no-common-ligatures" class=
+=3D"">,</span></div></div><div class=3D""><div style=3D"margin: 0px; font-s=
+ize: 18px; line-height: normal; font-family: Menlo;" class=3D""><span style=
+=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924" class=3D""=
+>192 </span><span style=3D"font-variant-ligatures: no-common-ligatures" cla=
+ss=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; userAgentSt=
+ring: </span><span style=3D"font-variant-ligatures: no-common-ligatures; co=
+lor: #c33720" class=3D"">&quot;BigBlueButton&quot;</span><span style=3D"fon=
+t-variant-ligatures: no-common-ligatures" class=3D"">,</span></div></div><d=
+iv class=3D""><div style=3D"margin: 0px; font-size: 18px; line-height: norm=
+al; font-family: Menlo;" class=3D""><span style=3D"font-variant-ligatures: =
+no-common-ligatures; color: #ce7924" class=3D"">193 </span><span style=3D"f=
+ont-variant-ligatures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stunServers: </span><span style=3D"font=
+-variant-ligatures: no-common-ligatures; color: #c33720" class=3D"">&quot;s=
+tun:192.168.8.119&quot;</span><span style=3D"font-variant-ligatures: no-com=
+mon-ligatures" class=3D"">,</span></div></div><div class=3D""><div style=3D=
+"margin: 0px; font-size: 18px; line-height: normal; font-family: Menlo;" cl=
+ass=3D""><span style=3D"font-variant-ligatures: no-common-ligatures; color:=
+ #ce7924" class=3D"">194 </span><span style=3D"font-variant-ligatures: no-c=
+ommon-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; turnServers: </span><span style=3D"font-variant-ligatures: no-comm=
+on-ligatures; color: #34bbc7" class=3D"">{</span></div></div><div class=3D"=
+"><div style=3D"margin: 0px; font-size: 18px; line-height: normal; font-fam=
+ily: Menlo;" class=3D""><span style=3D"font-variant-ligatures: no-common-li=
+gatures; color: #ce7924" class=3D"">195 </span><span style=3D"font-variant-=
+ligatures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; </span><span style=3D"font-variant-ligatures: no-common-ligatures; col=
+or: #c33720" class=3D"">'urls'</span><span style=3D"font-variant-ligatures:=
+ no-common-ligatures" class=3D"">: </span><span style=3D"font-variant-ligat=
+ures: no-common-ligatures; color: #c33720" class=3D"">'turn:192.168.8.119:3=
+478'</span><span style=3D"font-variant-ligatures: no-common-ligatures" clas=
+s=3D"">,</span></div></div><div class=3D""><div style=3D"margin: 0px; font-=
+size: 18px; line-height: normal; font-family: Menlo;" class=3D""><span styl=
+e=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924" class=3D"=
+">196 </span><span style=3D"font-variant-ligatures: no-common-ligatures" cl=
+ass=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style=3D"font-va=
+riant-ligatures: no-common-ligatures; color: #c33720" class=3D"">'username'=
+</span><span style=3D"font-variant-ligatures: no-common-ligatures" class=3D=
+"">: </span><span style=3D"font-variant-ligatures: no-common-ligatures; col=
+or: #c33720" class=3D"">'cloudpe'</span><span style=3D"font-variant-ligatur=
+es: no-common-ligatures" class=3D"">,</span></div></div><div class=3D""><di=
+v style=3D"margin: 0px; font-size: 18px; line-height: normal; font-family: =
+Menlo;" class=3D""><span style=3D"font-variant-ligatures: no-common-ligatur=
+es; color: #ce7924" class=3D"">197 </span><span style=3D"font-variant-ligat=
+ures: no-common-ligatures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+</span><span style=3D"font-variant-ligatures: no-common-ligatures; color: #=
+c33720" class=3D"">'password'</span><span style=3D"font-variant-ligatures: =
+no-common-ligatures" class=3D"">: </span><span style=3D"font-variant-ligatu=
+res: no-common-ligatures; color: #c33720" class=3D"">'cloud123'</span></div=
+></div><div class=3D""><div style=3D"margin: 0px; font-size: 18px; line-hei=
+ght: normal; font-family: Menlo;" class=3D""><span style=3D"font-variant-li=
+gatures: no-common-ligatures; color: #ce7924" class=3D"">198 </span><span s=
+tyle=3D"font-variant-ligatures: no-common-ligatures" class=3D"">&nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </=
+span><span style=3D"font-variant-ligatures: no-common-ligatures; color: #34=
+bbc7" class=3D"">}</span></div></div><div class=3D""><div style=3D"margin: =
+0px; font-size: 18px; line-height: normal; font-family: Menlo;" class=3D"">=
+<span style=3D"font-variant-ligatures: no-common-ligatures; color: #ce7924"=
+ class=3D"">199 </span><span style=3D"font-variant-ligatures: no-common-lig=
+atures" class=3D"">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style=3D"font-v=
+ariant-ligatures: no-common-ligatures; color: #34bbc7" class=3D"">}</span><=
+span style=3D"font-variant-ligatures: no-common-ligatures" class=3D"">;</sp=
+an></div></div><div class=3D""><div style=3D"margin: 0px; font-size: 18px; =
+line-height: normal; font-family: Menlo;" class=3D""><span style=3D"font-va=
+riant-ligatures: no-common-ligatures" class=3D""><br class=3D""></span></di=
+v></div><div class=3D""><div class=3D"">Please make sure that the url setti=
+ng of <u class=3D"">sturnServers</u> and <u class=3D"">turnServers</u> are =
+NTU=A1=A6s url.</div></div></blockquote><div class=3D""><div class=3D""><br=
+ class=3D""></div><div class=3D""><br class=3D""></div><div class=3D"">For =
+more details, please checkout my script in git:&nbsp;<span style=3D"font-fa=
+mily: Menlo; font-size: 18px;" class=3D"">scripts/shell/change_IP_and_Port.=
+sh</span></div><div class=3D""><br class=3D""></div><div class=3D"">I hope =
+the problem is just due to the turn/stun server setting in <span class=3D""=
+>bbb_webrtc_bridge_sip.js.</span></div><span class=3D""><br class=3D""></sp=
+an><div class=3D"">FYI</div><div class=3D""><br class=3D""></div><div class=
+=3D"">Have a nice day,</div><div class=3D""><br class=3D""></div><div class=
+=3D"">Bill.</div><div class=3D""><br class=3D""></div><div><blockquote type=
+=3D"cite" class=3D""><div class=3D"">Patrick Whalen &lt;<a href=3D"mailto:p=
+atrick@cloudigit.com" class=3D"">patrick@cloudigit.com</a>&gt; =A9=F3 2016=
+=A6~11=A4=EB11=A4=E9 =A4U=A4=C85:34 =BCg=B9D=A1G</div><br class=3D"Apple-in=
+terchange-newline"><div class=3D""><div dir=3D"ltr" class=3D"">Bill,<div cl=
+ass=3D""><br class=3D""></div><div class=3D"">Hope you well.&nbsp;</div><di=
+v class=3D""><br class=3D""></div><div class=3D"">Do you remember the probl=
+em we had with changing the URL and WebRTC?</div><div class=3D""><br class=
+=3D""></div><div class=3D"">We changed URL for NTU and now WebRTC doesn't w=
+ork. Was there a file I need to change outside directory dev/bigbluebutton/=
+ &nbsp;?</div><div class=3D""><br class=3D""></div><div class=3D"">thanks,<=
+/div><div class=3D"">Patrick</div></div>
+</div></blockquote></div><br class=3D""></div></body></html>=
+
+--Apple-Mail=_A1EEFE38-BACE-4948-AD1A-54802F5E1597--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>648</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1479030089</integer>
+	<key>flags</key>
+	<integer>25770064897</integer>
+	<key>remote-id</key>
+	<string>3</string>
+</dict>
+</plist>

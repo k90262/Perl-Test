@@ -1,0 +1,45 @@
+951       
+MIME-Version: 1.0
+From: ycho <k90262xp@hotmail.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_00557C43-DB54-45B3-9BBE-EC4D444BBD2C"
+X-Smtp-Server: 4A70B848-898B-4044-B591-AD7C0A7A96EE
+Subject: test
+Message-ID: <76F6497F-6DBD-48F6-971F-BC1279A470C1@hotmail.com>
+X-Universally-Unique-Identifier: 329C15E4-C440-4C46-A4E1-9CB16D3D82A5
+Date: Sun, 13 Nov 2016 17:18:08 +0800
+To: <k90262xp@hotmail.com>
+
+
+--Apple-Mail=_00557C43-DB54-45B3-9BBE-EC4D444BBD2C
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain;
+	charset=us-ascii
+
+test
+
+--Apple-Mail=_00557C43-DB54-45B3-9BBE-EC4D444BBD2C
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" class="">test</body></html>
+
+--Apple-Mail=_00557C43-DB54-45B3-9BBE-EC4D444BBD2C--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>1907</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1479028688</integer>
+	<key>flags</key>
+	<integer>25770064897</integer>
+	<key>remote-id</key>
+	<string>2</string>
+</dict>
+</plist>
