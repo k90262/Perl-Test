@@ -38,6 +38,18 @@ print "match: $&\n";        	# <EN>friend</EN>
 print "postmatch: $'\n";	# , and enter
 print "lastmatch: $+\n";	# </EN>
 
+print "\n\n----------------------------------\n\n";
+
+# @- equal @LAST_MATCH_START
+# @+ equal @LAST_MATCH_END
+my $alphabet = "abcdefghijklmnopqrstuvwxyz";
+$alphabet =~ "(hi).*(stu)";
+print '=== my $alphabet = "abcdefghijklmnopqrstuvwxyz";', "\n";
+print '=== $alphabet =~ "(hi).*(stu)";', "\n";
+print "The entire match began at $-[0] and ended at $+[0]\n";
+print "The first match began at $-[1] and ended at $+[1]\n";
+print "The second match began at $-[2] and ended at $+[2]\n";
+
 =pod
 
 =head2
@@ -71,5 +83,13 @@ $ perl ch5.7.1_capture.plx
   match: <EM>friend</EM>
   postmatch: , and enter
   lastmatch: </EM>
+
+  ----------------------------------
+  
+  === my $alphabet = "abcdefghijklmnopqrstuvwxyz";
+  === $alphabet =~ "(hi).*(stu)";
+  The entire match began at 7 and ended at 21
+  The first match began at 7 and ended at 9
+  The second match began at 18 and ended at 21
 
 =cut
