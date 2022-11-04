@@ -6,3 +6,7 @@ next line of this paragraph. line line is dup.
 So, that, I think that is a case.
 
 Or. that that is the case.
+
+Perl
+perl
+PERL
