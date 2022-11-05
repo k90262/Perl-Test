@@ -16,5 +16,7 @@ Perl
 
 my $pattern = shift;
 while(<>) {
-  print if /$pattern/o;
+  print "$ARGV:$.: $_" if /$pattern/o; # equal 'grep -n'
+} continue {
+  close ARGV if eof; # reset $. 
 }
