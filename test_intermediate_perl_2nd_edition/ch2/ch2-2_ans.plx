@@ -17,5 +17,5 @@ foreach my $module ( @modules ) {
   printf "%*s %s\n",
     - $max_length,
     $module,
-    Module::CoreList->first_release( $module );
+    $Module::CoreList::released{ Module::CoreList->first_release( $module ) };
 }

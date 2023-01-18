@@ -20,12 +20,13 @@ printf "List Module in Perl $perl_version:
 
 %*s Release Date\n"
   , - $max_name_length
-  , "Module Name";
+  , "Module Name"
+  , "Release Date";
 
-print '-'x$max_name_length, "\n";
+print '-'x$max_name_length, '-' x length ' Release Date', "\n";
 
 foreach my $m ( @m ) {
-  my $r = Module::CoreList->first_release_by_date($m);
+  my $r = $Module::CoreList::released{ Module::CoreList->first_release( $m ) };
   printf "%*s %s\n"
     , - $max_name_length
     , $m
