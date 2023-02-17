@@ -26,4 +26,19 @@ b_say("hash key: ", @hash_key);
 b_say("hash value: ", @hash_value);
 
 
-my @castaways = ();
+my @castaways = qw(Bill Gilligan Cow);
+
+# using hash created by map() to check if user is in the orignal array.
+{
+  my %hash = map { $_, 1 } @castaways;
+  my $person = 'Gilligan';
+  my $person2 = 'Goofy';
+  
+  if ( $hash{$person} ) {
+    print "$person is a castaway. \n";
+  }
+  
+  unless ( $hash{$person2} ) {
+    print "$person2 is NOT a castaway. \n";
+  }
+}
