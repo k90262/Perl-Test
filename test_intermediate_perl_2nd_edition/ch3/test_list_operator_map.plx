@@ -24,3 +24,6 @@ my @hash_key = sort { $a - $b } keys %hash;
 my @hash_value = map { $hash2{$_} } @hash_key;
 b_say("hash key: ", @hash_key);
 b_say("hash value: ", @hash_value);
+
+
+my @castaways = ();
