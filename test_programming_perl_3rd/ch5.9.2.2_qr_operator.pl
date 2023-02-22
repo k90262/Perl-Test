@@ -19,7 +19,7 @@ use strict;
 =cut
 
 my @data = ('MY.STRING', '');
-my @patterns = ('my.STRING', '^\s*$', '\/; exit();');
+my @patterns = ('my.STRING', '^\s*$', '\; exit();[');
 
 =head2 Functions
 
@@ -33,10 +33,20 @@ my @patterns = ('my.STRING', '^\s*$', '\/; exit();');
   }
 
 =cut
-my @regexes = map { eval { qr/$_/is } || warn $@ } @patterns;
+## Original Version
+#my @regexes = map { qr/$_/is } @patterns;
+
+## Test version
+#my $e;
+#my @regexes = map { eval { qr/$_/is } or $e = $@ } @patterns;
+#warn $e if defined $e;
+
+## Book version
+my @regexes = map { eval { qr/$_/is } || warn "[warn] re compile faild: $@" } @patterns;
 
 foreach my $item (@data) {
   foreach my $re (@regexes) {
+    #print "---debug (regex: $re)---\n";
     if ($item =~ /$re/ ) { print "Item '$item' fit regex: $re\n"; }
   }
 }
