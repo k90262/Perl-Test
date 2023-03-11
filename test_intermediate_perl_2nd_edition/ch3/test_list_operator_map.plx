@@ -42,3 +42,26 @@ my @castaways = qw(Bill Gilligan Cow);
     print "$person2 is NOT a castaway. \n";
   }
 }
+
+
+print ("\n--oterh map testing--\n");
+sub map_split_number
+{
+  my @result = map { split // } @input_numbers;
+  b_say("map_split_number: ", @result);
+}
+map_split_number();
+
+sub map_split_number_which_ending_num_4 {
+  my @result = map {
+    my @digits = split //, $_;
+    if ($digits[-1] == 4) {
+      @digits;
+    }
+    else {
+      ( );
+    }
+  } @input_numbers;
+  b_say("map_split_number_which_ending_num_4: ", @result);
+}
+map_split_number_which_ending_num_4();
