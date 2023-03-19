@@ -1,0 +1,2 @@
+SRC=array.c builtin.c \ eval.c field.c main.c \
+missing.c msg.c node.c
