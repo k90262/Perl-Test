@@ -1,6 +1,19 @@
 #!/usr/bin/perl -w
 use strict;
 
+=pod
+
+=head1 Syntax
+
+  perl test_eval.plx
+
+=head1 Test Items
+
+=head2 1. Using eval() to detect error at runtime
+
+=cut
+
+
 print "\n--test_eval_statement--\n";
 
 sub test_eval_statement {
@@ -31,5 +44,20 @@ print "=>result: ", test_eval_functional(100, 10), "\n";
 print "start the 2nd computing....\n";
 print "=>result (undef return -1): ", test_eval_functional(100, 0), "\n";
 print "Finish computing.\n";
+
+
+=head2 2. Using eval() to write and run dynamic code
+
+=cut
+
+foreach my $operator ( qw(+ - * /) ) {
+  my $result = eval "2 $operator 2";
+  warn $@ if $@;
+  print "2 $operator 2 is $result\n";
+}
+
+print 'The quotient is ', eval '5 /', "\n";
+warn $@ if $@;
+
 
 
