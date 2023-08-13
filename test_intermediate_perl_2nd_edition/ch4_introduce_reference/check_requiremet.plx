@@ -18,7 +18,9 @@ use strict;
 
 sub check_required_items {
   my $who = shift;
-  my %who_items  = map { $_, 1 } @_; # other arguments are this user's personal items
+  my $items = shift;
+
+  my %who_items  = map { $_, 1 } @{$items}; # other arguments are this user's personal items
 
   my @required = qw(preserver sunscreen water_bottle jacket);
   
@@ -31,5 +33,5 @@ sub check_required_items {
 
 my @skipper   = qw(blue_shirt hat jacket preserver sunscreen);
 my @professor = qw(sunscreen water_bottle slide_rule batteries radio);
-check_required_items('skipper', @skipper);
-check_required_items('professor', @professor);
+check_required_items('skipper', \@skipper);
+check_required_items('professor', \@professor);
