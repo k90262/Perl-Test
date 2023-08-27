@@ -9,11 +9,15 @@ use strict;
 
   $ chmod +x check_requiremet.plx
   $ ./check_requiremet.plx
-  skipper is missing water_bottle.
-  Adding water_bottle to blue_shirt hat jacket preserver sunscreen for skipper.
-  professor is missing preserver.
-  professor is missing jacket.
-  Adding preserver jacket to sunscreen water_bottle slide_rule batteries radio for professor.
+  Skipper is missing water_bottle.
+  Adding water_bottle to blue_shirt hat jacket preserver sunscreen for Skipper.
+  Professor is missing preserver.
+  Professor is missing jacket.
+  Adding preserver jacket to sunscreen water_bottle slide_rule batteries radio for Professor.
+  Gilligan is missing preserver.
+  Gilligan is missing sunscreen.
+  Gilligan is missing jacket.
+  Adding preserver sunscreen jacket to red_shirt hat lucky_socks water_bottle for Gilligan.
 
 
 =cut
@@ -40,7 +44,25 @@ sub check_required_items {
   }
 }
 
+# Arrange
 my @skipper   = qw(blue_shirt hat jacket preserver sunscreen);
+my @skipper_with_name = ('Skipper' => \@skipper);
+
 my @professor = qw(sunscreen water_bottle slide_rule batteries radio);
-check_required_items('skipper', \@skipper);
-check_required_items('professor', \@professor);
+my @professor_with_name = ('Professor' =>  \@professor);
+
+my @gilligan = qw(red_shirt hat lucky_socks water_bottle);
+my @gilligan_with_name = ('Gilligan', \@gilligan);
+
+my @all_with_names = (
+  \@skipper_with_name,
+  \@professor_with_name,
+  \@gilligan_with_name,
+);
+
+# Act
+for my $person (@all_with_names) {
+  my $who = $$person[0];
+  my $provisions_reference = $$person[1];
+  check_required_items($who, $provisions_reference);
+}
