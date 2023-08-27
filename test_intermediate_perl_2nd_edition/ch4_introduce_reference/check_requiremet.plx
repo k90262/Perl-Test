@@ -19,7 +19,6 @@ use strict;
   Gilligan is missing jacket.
   Adding preserver sunscreen jacket to red_shirt hat lucky_socks water_bottle for Gilligan.
 
-
 =cut
 
 sub check_required_items {
@@ -61,8 +60,8 @@ my @all_with_names = (
 );
 
 # Act
-for my $person (@all_with_names) {
-  my $who = $$person[0];
-  my $provisions_reference = $$person[1];
-  check_required_items($who, $provisions_reference);
-}
+# for my $person (@all_with_names) {
+#   check_required_items(@$person);
+# }
+# Or
+check_required_items(@$_) for @all_with_names;
