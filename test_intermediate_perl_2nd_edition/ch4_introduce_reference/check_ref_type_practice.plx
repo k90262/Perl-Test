@@ -20,9 +20,15 @@ show_hash( \@array );
 sub show_hash {
   my $hash_ref = shift;
   croak "I expected a hash reference!" 
-    unless eval { keys %$hash_ref; 1 };
+    unless is_hash_ref( $hash_ref );
   
   foreach my $key ( keys %$hash_ref ) {
     print "key: $key\n";
   }
+}
+
+sub is_hash_ref {
+  my $hash_ref = shift;
+
+  return eval { keys %$hash_ref; 1 };
 }
