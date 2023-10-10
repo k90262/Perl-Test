@@ -19,7 +19,7 @@ sub show_hash {
   my $hash_ref = shift;
   my $ref_type = ref $hash_ref;
   croak "I expected a hash reference!" 
-    unless $ref_type eq 'HASH';
+    unless $ref_type eq ref {};
   
   foreach my $key ( keys %$hash_ref ) {
     print "key: $key\n";
