@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 use strict;
+use Carp qw(croak);
 
 =pod
 
@@ -16,6 +17,9 @@ show_hash( \@array );
 
 sub show_hash {
   my $hash_ref = shift;
+  my $ref_type = ref $hash_ref;
+  croak "I expected a hash reference!" 
+    unless $ref_type eq 'HASH';
   
   foreach my $key ( keys %$hash_ref ) {
     print "key: $key\n";
