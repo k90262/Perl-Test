@@ -1,8 +1,6 @@
 #!/usr/bin/perl -w
 use strict;
 use Carp qw(croak);
-use Scalar::Util qw(reftype);
-use constant HASH => ref {};
 
 =pod
 
@@ -21,9 +19,8 @@ show_hash( \@array );
 
 sub show_hash {
   my $hash_ref = shift;
-  my $ref_type = reftype $hash_ref; # worked for object
   croak "I expected a hash reference!" 
-    unless $ref_type eq HASH;
+    unless eval { keys %$hash_ref; 1 };
   
   foreach my $key ( keys %$hash_ref ) {
     print "key: $key\n";
