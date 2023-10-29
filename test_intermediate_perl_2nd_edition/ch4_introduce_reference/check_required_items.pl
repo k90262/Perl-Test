@@ -18,3 +18,7 @@ sub check_required_items {
 		push @$items, @missing;
 	} 
 }
+
+sub test {
+  print 'test', "\n";
+}

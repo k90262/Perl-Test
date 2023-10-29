@@ -1,6 +1,18 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+do './check_required_items.pl';
+
+=pod
+
+=head1 check_items_for_all 
+
+=head2 Syntax
+
+  $ perl ./check_items_for_all.pl
+  test
+
+=cut
 
 my @skipper   = qw(blue_shirt hat jacket preserver sunscreen);
 my @professor = qw(sunscreen water_bottle slide_rule batteries radio);
@@ -15,5 +27,5 @@ my %all = (
 check_items_for_all(\%all);
 
 sub check_items_for_all {
-	die "You need to fill in check_items_for_all";
+  &test();
 }
