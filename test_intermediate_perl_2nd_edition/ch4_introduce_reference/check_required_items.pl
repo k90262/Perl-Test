@@ -19,6 +19,3 @@ sub check_required_items {
 	} 
 }
 
-sub test {
-  print 'test', "\n";
-}
