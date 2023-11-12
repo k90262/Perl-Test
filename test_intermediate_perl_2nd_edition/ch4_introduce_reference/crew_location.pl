@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 use strict;
-use warnings;
+#use warnings;
 
 my %gilligan_info = (
 	name     => 'Gilligan', 
@@ -14,8 +14,14 @@ my %skipper_info = (
 	shirt    => 'Blue',
 	position => 'Captain',
 );
+my %mr_howell_info = (
+	name     => 'Mr. Howell',
+	hat      => undef,
+	shirt    => 'White',
+	position => 'Passenger',
+);
 
-my @crew = (\%gilligan_info, \%skipper_info);
+my @crew = (\%gilligan_info, \%skipper_info, \%mr_howell_info);
 
 my $format = "%-15s %-7s %-7s %-15s\n"; 
 printf $format, qw(Name Shirt Hat Position); 
@@ -26,4 +32,19 @@ foreach my $crewmember (@crew) {
 		$crewmember->{'shirt'}, 
 		$crewmember->{'hat'}, 
 		$crewmember->{'position'};
+}
+
+print "----\n";
+
+foreach my $person (@crew) {
+  $person->{location} = 'The Island';
+}
+
+foreach my $person (@crew) {
+  next unless $person->{name} =~ /Howell/;
+  $person->{location} = 'The Island Country Club';
+}
+
+foreach my $person (@crew) {
+  printf "$person->{name} at $person->{location}\n"; 
 }
