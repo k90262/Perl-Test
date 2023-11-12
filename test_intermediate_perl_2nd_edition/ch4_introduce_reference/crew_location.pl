@@ -37,14 +37,8 @@ foreach my $crewmember (@crew) {
 print "----\n";
 
 foreach my $person (@crew) {
-  $person->{location} = 'The Island';
-}
+  $person->{location} = ($person->{name} =~ /Howell/) ? 
+    'The Island Country Club' : 'The Island';
 
-foreach my $person (@crew) {
-  next unless $person->{name} =~ /Howell/;
-  $person->{location} = 'The Island Country Club';
-}
-
-foreach my $person (@crew) {
   printf "$person->{name} at $person->{location}\n"; 
 }
