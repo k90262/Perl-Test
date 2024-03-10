@@ -10,7 +10,7 @@ If any refenrence existed in array and copy array  by shallow copy, then the ref
 
 =head2 For Example - batteries will be added on both array
 
-  perl ch6_test_shallo_copy.plx
+  perl ch6_test_shallow_copy.plx
   @provisions = (
                   'hat',
                   'suncreen',
