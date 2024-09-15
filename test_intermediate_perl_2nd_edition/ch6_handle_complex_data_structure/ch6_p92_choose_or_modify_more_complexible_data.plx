@@ -22,23 +22,29 @@ my %provisions = (
 );
 
 my @packed_light = grep @{ $provisions{$_} } < 5, keys %provisions;
-print "Ques 1: who's provisions is less than 5 items?\n";
-print "Ans 1: @packed_light\n";
+
+sub ques_and_ans_1 {
+  print "Ques 1: who's provisions is less than 5 items?\n";
+  print "Ans 1: @{ shift @_ } \n";
+}
+&ques_and_ans_1(\@packed_light);
 
 my @all_wet = grep {
   my @items = @{ $provisions{$_} };
   grep $_ eq 'water_bottle', @items;
 } keys %provisions;
 
-print "Ques 2: who do have a water bottle??\n";
-print "Ans 2: @all_wet\n";
+sub ques_and_ans_2 {
+  print "Ques 2: who do have a water bottle??\n";
+  print "Ans 2: @{ shift @_ }\n";
+}
+&ques_and_ans_2(\@all_wet);
 
 print "------Remapped List Ver.------\n";
 
 my @remapped_list = map {
   [ $_ =>  $provisions{$_} ];
 } keys %provisions;
-
 #print @remapped_list, "\n";
 
 my @packed_light_list = grep {
@@ -47,8 +53,7 @@ my @packed_light_list = grep {
 
 @packed_light = map { $_->[0] } @packed_light_list;
 
-print "Ques 1: who's provisions is less than 5 items?\n";
-print "Ans 1: @packed_light\n";
+&ques_and_ans_1(\@packed_light);
 
 my @all_wet_list = grep {
   my @items = @{ $_->[1] };
@@ -56,5 +61,4 @@ my @all_wet_list = grep {
 } @remapped_list;
 @all_wet = map { $_->[0] } @all_wet_list;
 
-print "Ques 2: who do have a water bottle??\n";
-print "Ans 2: @all_wet\n";
+&ques_and_ans_2(\@all_wet);
