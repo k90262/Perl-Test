@@ -10,6 +10,8 @@ use strict;
   $ perl ch6_p92_choose_or_modify_more_complexible_data.plx
   Ques 1: who's provisions is less than 5 items?
   Ans 1: Gilligan
+  Ques 2: who do have a water bottle??
+  Ans 2: Gilligan The Professor
 
 =cut
 
@@ -22,3 +24,12 @@ my %provisions = (
 my @packed_light = grep @{ $provisions{$_} } < 5, keys %provisions;
 print "Ques 1: who's provisions is less than 5 items?\n";
 print "Ans 1: @packed_light\n";
+
+my @all_wet = grep {
+  my @items = @{ $provisions{$_} };
+  grep $_ eq 'water_bottle', @items;
+} keys %provisions;
+
+print "Ques 2: who do have a water bottle??\n";
+print "Ans 2: @all_wet\n";
+
