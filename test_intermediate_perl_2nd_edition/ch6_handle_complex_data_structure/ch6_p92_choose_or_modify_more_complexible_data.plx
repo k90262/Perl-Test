@@ -33,3 +33,28 @@ my @all_wet = grep {
 print "Ques 2: who do have a water bottle??\n";
 print "Ans 2: @all_wet\n";
 
+print "------Remapped List Ver.------\n";
+
+my @remapped_list = map {
+  [ $_ =>  $provisions{$_} ];
+} keys %provisions;
+
+#print @remapped_list, "\n";
+
+my @packed_light_list = grep {
+  @{ $_->[1] } < 5
+} @remapped_list;
+
+@packed_light = map { $_->[0] } @packed_light_list;
+
+print "Ques 1: who's provisions is less than 5 items?\n";
+print "Ans 1: @packed_light\n";
+
+my @all_wet_list = grep {
+  my @items = @{ $_->[1] };
+  grep $_ eq 'water_bottle', @items;
+} @remapped_list;
+@all_wet = map { $_->[0] } @all_wet_list;
+
+print "Ques 2: who do have a water bottle??\n";
+print "Ans 2: @all_wet\n";
