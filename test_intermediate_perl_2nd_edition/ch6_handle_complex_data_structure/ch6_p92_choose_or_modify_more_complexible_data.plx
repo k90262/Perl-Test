@@ -9,9 +9,19 @@ use strict;
 
   $ perl ch6_p92_choose_or_modify_more_complexible_data.plx
   Ques 1: who's provisions is less than 5 items?
-  Ans 1: Gilligan
+  Ans 1: Gilligan 
   Ques 2: who do have a water bottle??
   Ans 2: Gilligan The Professor
+  ------Remapped List Ver.------
+  Ques 1: who's provisions is less than 5 items?
+  Ans 1: Gilligan 
+  Ques 2: who do have a water bottle??
+  Ans 2: Gilligan The Professor
+  ------Remapped as an array------
+  Ques 1: who's provisions is less than 5 items?
+  Ans 1: Gilligan 
+  Ques 2: who do have a water bottle??
+  Ans 2: Gilligan The Professor@all_wet = map { $_->[0] } @all_wet_list;
 
 =cut
 
@@ -60,5 +70,29 @@ my @all_wet_list = grep {
   grep $_ eq 'water_bottle', @items;
 } @remapped_list;
 @all_wet = map { $_->[0] } @all_wet_list;
+
+&ques_and_ans_2(\@all_wet);
+
+print "------Remapped as an array------\n";
+
+my @person_item_pairs = map {
+  my $person = $_;
+  my @items = @{ $provisions{$person} };
+  map [$person => $_], @items;
+} keys %provisions;
+
+@packed_light = grep {
+  my $person = $_;
+  my @items = grep $_->[0] eq $person, @person_item_pairs;
+  @items < 5;
+} keys %provisions;
+
+&ques_and_ans_1(\@packed_light);
+
+@all_wet = grep {
+  my $person = $_;
+  my @items = grep $_->[0] eq $person && $_->[1] eq 'water_bottle', @person_item_pairs;
+  @items >= 1;
+} keys %provisions;
 
 &ques_and_ans_2(\@all_wet);
