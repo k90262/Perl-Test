@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 use strict;
-use Storable qw(nstore retrieve);
+use JSON;
 
 =pod
 
@@ -8,7 +8,7 @@ use Storable qw(nstore retrieve);
 
 =head2 Usage Example
 
-  $ perl ch6-1_updated_coconet_report_program_by_using_storable.plx coconet_6_line.dat
+  $ perl ch6-2_updated_coconet_report_program_by_using_JSON.plx coconet_6_line.dat
   ginger.girl.hut
     skipper.crew.hut 1511
   laser3.copyroom.hut
@@ -19,14 +19,35 @@ use Storable qw(nstore retrieve);
   skipper.crew.hut
     maryann.girl.hut 7991
     professor.hut 3476
+  $ cat ch6-2_total_report.json 
+  [
+     {
+        "ginger.girl.hut" : {
+           "skipper.crew.hut" : 1511
+        },
+        "professor.hut" : {
+           "ginger.girl.hut" : 3925
+        },
+        "skipper.crew.hut" : {
+           "maryann.girl.hut" : 7991,
+           "professor.hut" : 3476
+        },
+        "laser3.copyroom.hut" : {
+           "maryann.girl.hut" : 1127,
+           "professor.hut" : 6830
+        }
+     }
+  ]
 
-  $ ll ch6-1_total_report.bin
-  -rw-r--r--  1 apple  staff   263B 10  7 01:01 ch6-1_total_report.bin
+=head2 Reference
+
+  $ perldoc JSON
 
 =cut
 
-my $_report_filename = "ch6-1_total_report.bin";
+my $_report_filename = "ch6-2_total_report.json";
 my %_total_bytes;
+my $_json = JSON->new->allow_nonref;
 
 &load_report();
 
@@ -43,13 +64,18 @@ while (<>) {
 
 sub load_report {
   if (-e $_report_filename) {
-    my $array_ref = retrieve $_report_filename;
+    local $/;
+    open my $fh, '<:raw', $_report_filename;
+    my $json_text = <$fh>;
+    my $array_ref = $_json->decode( $json_text );
     %_total_bytes = %{ $array_ref->[0] };  
   }
 }
 
 sub save_report {
-  nstore [\%_total_bytes], $_report_filename;
+  open my $fh, '>:utf8', $_report_filename;
+  my $json_text = $_json->pretty->encode( [\%_total_bytes] );
+  print $fh $json_text;
 }
 
 sub print_report {
