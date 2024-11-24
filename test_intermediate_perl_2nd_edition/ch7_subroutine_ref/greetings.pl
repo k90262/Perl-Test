@@ -1,6 +1,21 @@
 #!/usr/bin/perl -w
 use strict;
 
+=pod
+
+=head2 Example
+
+  $perl greetings.pl 
+  Skipper: Hey there, Gilligan!
+  Gilligan: Sir, yes, sir, Skipper!
+  (Professor joins the room)
+  Skipper: Hey there, Professor!
+  Gilligan: Hi, Professor!
+  Professor: By my calculations, you must be Gilligan!
+  Professor: By my calculations, you must be Skipper!
+
+=cut
+
 sub skipper_greets {
   my $person = shift;
   print "Skipper: Hey there, $person!\n";
@@ -20,9 +35,9 @@ gilligan_greets("Skipper");
 
 print "(Professor joins the room)\n";
 
-skipper_greets("Professor");
-gilligan_greets("Professor");
-
+for my $greet (\&skipper_greets, \&gilligan_greets) {
+  $greet->('Professor')
+}
 
 sub professor_greets {
   my $person = shift;
