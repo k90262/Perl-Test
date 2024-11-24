@@ -6,13 +6,18 @@ use strict;
 =head2 Example
 
   $perl greetings.pl 
+  
+  Gilligan walks into the room.
+  
+  Skipper walks into the room.
   Skipper: Hey there, Gilligan!
   Gilligan: Sir, yes, sir, Skipper!
-  (Professor joins the room)
-  Skipper: Hey there, Professor!
-  Gilligan: Hi, Professor!
+  
+  Professor walks into the room.
   Professor: By my calculations, you must be Gilligan!
+  Gilligan: Hi, Professor!
   Professor: By my calculations, you must be Skipper!
+  Skipper: Hey there, Professor!
 
 =cut
 
@@ -41,14 +46,13 @@ my %greets = (
   Professor => \&professor_greets,
 );
 
-skipper_greets("Gilligan");
-gilligan_greets("Skipper");
-
-print "(Professor joins the room)\n";
-
-for my $person (qw(Skipper Gilligan)) {
-  $greets{$person}->('Professor');
+my @room; # room is empty when start
+for my $person (qw(Gilligan Skipper Professor)) {
+  print "\n";
+  print "$person walks into the room.\n";
+  for my $room_person (@room) {
+    $greets{$person}->($room_person); # say hello
+    $greets{$room_person}->($person); # reply
+  }
+  push @room, $person; # join to this family
 }
-
-professor_greets("Gilligan");
-professor_greets("Skipper");
