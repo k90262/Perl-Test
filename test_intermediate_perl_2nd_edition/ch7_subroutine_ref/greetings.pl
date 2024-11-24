@@ -30,18 +30,24 @@ sub gilligan_greets {
   }
 }
 
+sub professor_greets {
+  my $person = shift;
+  print "Professor: By my calculations, you must be $person!\n";
+}
+
+my %greets = (
+  Gilligan  => \&gilligan_greets,
+  Skipper   => \&skipper_greets,
+  Professor => \&professor_greets,
+);
+
 skipper_greets("Gilligan");
 gilligan_greets("Skipper");
 
 print "(Professor joins the room)\n";
 
-for my $greet (\&skipper_greets, \&gilligan_greets) {
-  $greet->('Professor')
-}
-
-sub professor_greets {
-  my $person = shift;
-  print "Professor: By my calculations, you must be $person!\n";
+for my $person (qw(Skipper Gilligan)) {
+  $greets{$person}->('Professor');
 }
 
 professor_greets("Gilligan");
