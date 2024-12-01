@@ -18,6 +18,14 @@ use strict;
   Gilligan: Hi, Professor!
   Professor: By my calculations, you must be Skipper!
   Skipper: Hey there, Professor!
+  
+  Ginger walks into the room.
+  Ginger: (in a sultry voice) well hello, Gilligan!
+  Gilligan: Hi, Ginger!
+  Ginger: (in a sultry voice) well hello, Skipper!
+  Skipper: Hey there, Ginger!
+  Ginger: (in a sultry voice) well hello, Professor!
+  Professor: By my calculations, you must be Ginger!
 
 =cut
 
@@ -44,10 +52,14 @@ my %greets = (
   Gilligan  => \&gilligan_greets,
   Skipper   => \&skipper_greets,
   Professor => \&professor_greets,
+  Ginger => sub {
+    my $person = shift;
+    print "Ginger: (in a sultry voice) well hello, $person!\n";
+  },
 );
 
 my @room; # room is empty when start
-for my $person (qw(Gilligan Skipper Professor)) {
+for my $person (qw(Gilligan Skipper Professor Ginger)) {
   print "\n";
   print "$person walks into the room.\n";
   for my $room_person (@room) {
