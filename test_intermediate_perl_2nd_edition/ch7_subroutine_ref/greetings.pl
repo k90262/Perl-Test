@@ -3,6 +3,14 @@ use strict;
 
 =pod
 
+=head1 NAME
+  
+  greetings.pl - use subroutine reference in a data strucutre
+
+=head1 SYNOPSIS
+
+  perl greetings.pl
+
 =head2 Example
 
   $perl greetings.pl 
@@ -29,29 +37,27 @@ use strict;
 
 =cut
 
-sub skipper_greets {
-  my $person = shift;
-  print "Skipper: Hey there, $person!\n";
-}
-
-sub gilligan_greets {
-  my $person = shift;
-  if ($person eq "Skipper") {
-    print "Gilligan: Sir, yes, sir, $person!\n";
-  } else {
-    print "Gilligan: Hi, $person!\n";
-  }
-}
-
-sub professor_greets {
-  my $person = shift;
-  print "Professor: By my calculations, you must be $person!\n";
-}
-
 my %greets = (
-  Gilligan  => \&gilligan_greets,
-  Skipper   => \&skipper_greets,
-  Professor => \&professor_greets,
+
+  Skipper   => sub {
+    my $person = shift;
+    print "Skipper: Hey there, $person!\n";
+  },
+
+  Gilligan  => sub {
+    my $person = shift;
+    if ($person eq "Skipper") {
+      print "Gilligan: Sir, yes, sir, $person!\n";
+    } else {
+      print "Gilligan: Hi, $person!\n";
+    }
+  },
+
+  Professor => sub {
+    my $person = shift;
+    print "Professor: By my calculations, you must be $person!\n";
+  },
+
   Ginger => sub {
     my $person = shift;
     print "Ginger: (in a sultry voice) well hello, $person!\n";
