@@ -11,20 +11,18 @@ use File::Find;
 =cut
 my $total_size = 0;
 find(sub { $total_size += -s if -f }, '.');
-print $total_size, "$/";
+print "Total Files Bytes: $total_size$/";
+print "------------------------$/";
 
-
-my $callback;
-{
+sub create_find_callback_that_counts{
   my $count = 0;
-  $callback = sub { 
-    print ++$count, ": $File::Find::name"; 
-    if (-f) { 
-      print "\t(File Size: ", -s, ")$/"; 
-    } 
-    else { 
-      print "\t(Not a File)$/"; 
-    } 
+  return sub {
+    my $size = -f ? -s : -1;
+    my $msg = ($size > -1) ? 
+      "(File Size: $size)" : 
+      "(Not a File)      ";
+    print ++$count, ":\t$msg\t$File::Find::name$/"; 
   };
 }
+my $callback = create_find_callback_that_counts();
 find($callback, '.');
