@@ -6,7 +6,7 @@ use File::Find;
 
 =head1 SYNOPSIS
 
-  perl demo_closure_via_File_Find.pl
+  perl demo_closure_via_File_Find_diffent_count.pl
 
 =cut
 sub create_find_callback_that_counts{
@@ -19,9 +19,10 @@ sub create_find_callback_that_counts{
     print ++$count, ":\t$msg\t$File::Find::name$/"; 
   };
 }
-my $callback = create_find_callback_that_counts();
+my $callback1 = create_find_callback_that_counts();
+my $callback2 = create_find_callback_that_counts();
 print "my bin:\n";
-find($callback, '/Users/apple/bin');
+find($callback1, '/Users/apple/bin');
 print "my lib:\n";
-find($callback, '/Users/apple/lib');
+find($callback2, '/Users/apple/lib');
 
