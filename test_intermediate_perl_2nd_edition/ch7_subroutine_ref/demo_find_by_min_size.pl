@@ -7,11 +7,11 @@ use File::Spec::Functions qw(canonpath no_upwards);
 
 =head1 SYNOPSIS
 
-  perl demo_find_by_min_size.pl
+  perl demo_find_by_min_size.pl target_folder_path min_size
 
 =head2 Example
 
-  $ perl demo_find_by_min_size.pl
+  $ perl demo_find_by_min_size.pl bin 1024
   bin/output.dat
 
 =cut
@@ -24,11 +24,11 @@ sub find_by_min_size {
   sub { push @files, canonpath( $File::Find::name ) 
     if -s $_ >= $min},
   sub { @files = no_upwards( @files );
-    wantarrary ? @files : [ @files] }
+    wantarry? @files : [ @files] }
 }
 
-my ($callback, $reporter) = find_by_min_size(1024);
-find($callback, 'bin');
+my ($callback, $reporter) = find_by_min_size($ARGV[1]);
+find($callback, $ARGV[0]);
 
 my @files_found = $reporter->();
-print @files_found, "\n";
+print join("\n", @files_found), "\n";
