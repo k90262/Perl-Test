@@ -1,0 +1,10 @@
+Mary-Ann: 5 flowers
+Mr. Howell: 3 coconuts
+Ginger: 1 crab
+Mr. Howell: 5 papayas
+Professor: 1 papaya
+Gilligan: 1 papaya
+Professor: 1 crab
+Mary-Ann: 1 flower
+Skipper: 2 flowers
+Ginger: 2 papayas
