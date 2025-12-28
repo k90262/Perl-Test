@@ -16,6 +16,28 @@ use strict;
   test_pipe_data_in_from.plx
   ..
 
+=head2 Description
+
+Print out the filenames in the directories passed as arguments.
+
+=head2 Usage
+
+  perl ch8-3_print_out_filenames_in_folders.plx dir1 dir2 ...
+
+=head2 Arguments
+
+=over 4
+
+=item dir1 dir2 ...
+
+Directories to print out the filenames contained in them.
+
+=back
+
+=head2 Requirements
+
+Perl 5
+
 =cut
 
 
