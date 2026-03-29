@@ -16,18 +16,25 @@ my %patterns = (
 
 say rightmost( 
   'There is Mrs. Howell, Ginger, and Gilligan',
-  @patterns{ sort keys %patterns }
+  \%patterns
 );	
-	
+
+
 sub rightmost {
-  my( $string, @patterns ) = @_;
+  my( $string, $patterns ) = @_;
+  my $debug = 1;
   
   my $rightmost = -1;
+  my $key_of_rightmost;
   my $position;
-  while( my( $i, $pattern ) = each @patterns ) {
+  while( my( $i, $pattern ) = each %$patterns ) {
+	print "DEBUG> ", $i, ": ", $pattern, "\n" if $debug;
 	$position = $string =~ m/$pattern/ ? $-[0] : -1;
-	$rightmost = $position if $position > $rightmost;
+	if ($position > $rightmost) {
+		$rightmost = $position;
+		$key_of_rightmost = $i;
 	}
+  }
 
-return $rightmost; 		
+return $key_of_rightmost;
 }
