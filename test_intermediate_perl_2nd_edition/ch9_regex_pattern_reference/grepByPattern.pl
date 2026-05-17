@@ -1,23 +1,31 @@
 #!/usr/bin/perl -w
 use strict;
+use Regexp::Assemble;
 
+# use Regexp::Assemble;
+# 
+# my $ra = Regexp::Assemble->new;
+# $ra->add( 'ab+c' );
+# $ra->add( 'ab+-' );
+# $ra->add( 'a\w\d+' );
+# $ra->add( 'a\d+' );
+# print $ra->re; # prints a(?:\w?\d+|b+[-c])
+
+my $ra = Regexp::Assemble->new;
 open my $fh, '<', 'patterns.txt' 
   or die "Could not open file: $!";
-
-my @patterns;
 
 while (<$fh>) {
   chomp;
   my $pattern = eval { qr/$_/ } or die "Invalid regex pattern '$_': $@";
-  push @patterns, $pattern;
+  $ra->add($pattern);
 }
 
+my $pattern = $ra->re; # Get the combined regex pattern
 while (<>) {
-  foreach my $pattern (@patterns) {
-    if (/$pattern/) {
-      print "Match of [$pattern] at line $. | $_\n";
-      last; # Stop checking other patterns if a match is found
-    }
+  if (/$pattern/) {
+    print "Match of [$pattern] at line $. | $_\n";
+    last; # Stop checking other patterns if a match is found
   }
 }
 
@@ -47,15 +55,21 @@ Make sure to have a 'patterns.txt' file in the same directory as the script, con
 
 =head2 Example of 'patterns.txt' content:
 
-^Error
-^Warning
-\d{4}-\d{2}-\d{2}
+  ^Error
+  ^Warning
+  \d{4}-\d{2}-\d{2}
+
+=head1 Example
+
+  $ perl grepByPattern.pl
+  2021-12-01
+  Match of [(?^:(?:(?^:\d{4}-\d{2}-\d{2})|(?^:^Warning)|(?^:^Error)))] at line 1 | 2021-12-01
+
 
 =head1 Author
 
-Bill Ho 
-Copilot
+Bill Ho, Copilot
 
-2026-05-04.
+2026-05-18.
 
 =cut
